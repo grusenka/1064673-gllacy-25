@@ -49,23 +49,116 @@
       </nav>
 
       <div class="user-menu">
-        <div class="user-menu-search">
-          <span class="action-button action-button-search">Поиск</span>
+        <section class="user-menu-search">
+          <a class="action-button action-button-search" href="#">Поиск</a>
 
-          <!-- Здесь будет форма -->
-        </div>
+          <h2 class="visually-hidden">Поиск по сайту</h2>
 
-        <div class="user-menu-authorization">
-          <span class="action-button action-button-login">Вход</span>
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
 
-          <!-- Здесь будет форма -->
-        </div>
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
+        </section>
 
-        <div class="user-menu-basket">
-          <span class="action-button action-button-basket">Пусто</span>
+        <section class="user-menu-authorization">
+          <a class="action-button action-button-login" href="#">Вход</a>
 
-          <!-- Здесь будет форма -->
-        </div>
+          <h2 class="visually-hidden">Авторизация</h2>
+
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-field">
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            </p>
+
+            <p class="form-field">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            </p>
+
+            <div class="form-group-actions">
+              <button class="button" type="submit">Войти</button>
+
+              <ul class="links">
+                <li class="link-item">
+                  <a class="link" href="#">Забыли пароль</a>
+                </li>
+
+                <li class="link-item">
+                  <a class="link" href="#">Новая регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </section>
+
+        <section class="user-menu-basket">
+          <span class="action-button action-button-basket">2 товара</span>
+
+          <h2 class="visually-hidden">Корзина</h2>
+
+          <table class="basket-table">
+            <tbody>
+            <tr>
+              <td class="basket-table-cell">
+                <button class="remove-table-row" type="button">Удалить</button>
+
+                <p class="basket-table-cell-image">
+                  <img src="img/product-tiny-01.jpg" width="33" height="33" alt="">
+                </p>
+
+                <p class="basket-table-cell-text">Пломбир с апельсиновым джемом</p>
+              </td>
+
+              <td class="basket-table-cell">
+                <p class="basket-table-cell-text">
+                  1,5 кг х
+                  <span class="basket-table-cell-text-marked">200 руб.</span>
+                </p>
+              </td>
+
+              <td class="basket-table-cell">
+                <p class="basket-table-cell-text">300 руб.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="basket-table-cell">
+                <button class="remove-table-row" type="button">Удалить</button>
+
+                <p class="basket-table-cell-image">
+                  <img src="img/product-tiny-02.jpg" width="33" height="33" alt="">
+                </p>
+
+                <p class="basket-table-cell-text">Клубничный пломбир с присыпкой из белого шоколада</p>
+              </td>
+
+              <td class="basket-table-cell">
+                <p class="basket-table-cell-text">
+                  1,5 кг х
+                  <span class="basket-table-cell-text-marked">300 руб.</span>
+                </p>
+              </td>
+
+              <td class="basket-table-cell">
+                <p class="basket-table-cell-text">450 руб.</p>
+              </td>
+            </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+              <td class="basket-table-cell basket-table-cell-total">
+                <b class="basket-table-cell-text-total">Итого: 750 руб.</b>
+              </td>
+            </tr>
+            </tfoot>
+          </table>
+
+          <a class="button" href="">Оформить заказ</a>
+        </section>
       </div>
 
       <ul class="breadcrumbs-list">

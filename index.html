@@ -49,23 +49,54 @@
       </nav>
 
       <div class="user-menu">
-        <div class="user-menu-search">
-          <span class="action-button action-button-search">Поиск</span>
+        <section class="user-menu-search">
+          <a class="action-button action-button-search" href="#">Поиск</a>
 
-          <!-- Здесь будет форма-->
-        </div>
+          <h2 class="visually-hidden">Поиск по сайту</h2>
 
-        <div class="user-menu-authorization">
-          <span class="action-button action-button-login">Вход</span>
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
 
-          <!-- Здесь будет форма -->
-        </div>
+            <button class="visually-hidden" type="submit">Найти</button>
+          </form>
+        </section>
 
-        <div class="user-menu-basket">
+        <section class="user-menu-authorization">
+          <a class="action-button action-button-login" href="#">Вход</a>
+
+          <h2 class="visually-hidden">Авторизация</h2>
+
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-field">
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            </p>
+
+            <p class="form-field">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            </p>
+
+            <div class="form-group-actions">
+              <button class="button" type="submit">Войти</button>
+
+              <ul class="links">
+                <li class="link-item">
+                  <a class="link" href="#">Забыли пароль</a>
+                </li>
+
+                <li class="link-item">
+                  <a class="link" href="#">Новая регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </section>
+
+        <section class="user-menu-basket">
           <span class="action-button action-button-basket">Пусто</span>
-
-          <!-- Здесь будет форма-->
-        </div>
+        </section>
       </div>
 
       <div class="contacts">
@@ -76,6 +107,8 @@
     </header>
 
     <main>
+      <h1>Магазин мороженого собственного производства Gllacy Shop</h1>
+
       <section class="promo">
         <ul class="promo-slides">
           <li class="promo-slide">
@@ -260,12 +293,19 @@
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на новости</h2>
 
-        <p>
+        <p class="subscription-text">
           Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что
           у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)
         </p>
 
-        <!-- Здесь будет форма -->
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form-field form-field-horizontal">
+            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+            <input class="text-field" type="email" name="email" id="subscription-email" placeholder="Электронная почта" required>
+
+            <button class="button" type="submit">Отправить</button>
+          </p>
+        </form>
       </section>
     </main>
 
@@ -318,5 +358,32 @@
         </p>
       </div>
     </footer>
+
+    <section class="dialog">
+      <h2 class="dialog-title">Мы обязательно вам ответим!</h2>
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form-field">
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="text-field" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+        </p>
+
+        <p class="form-field">
+          <label class="visually-hidden" for="email">Электронная почта</label>
+          <input class="text-field" type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required>
+        </p>
+
+        <p class="form-field">
+          <label class="visually-hidden" for="message">Сообщение</label>
+          <textarea class="textarea-field" name="message" id="message" required>Напишите что-нибудь...</textarea>
+        </p>
+
+        <div class="form-actions">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+
+      <button class="dialog-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
