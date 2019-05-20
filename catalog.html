@@ -184,7 +184,87 @@
       <section class="catalog">
         <h1 class="catalog-title">Сливочное мороженое</h1>
 
-        <!-- Здесь будет фильтр -->
+        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="form-group">
+            <div class="form-field">
+              <label class="label-field" for="filter-sorter">Сортировка:</label>
+
+              <select class="select-field" name="sorter" id="filter-sorter">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <!-- тут будет слайдер -->
+            </div>
+
+            <div class="form-field">
+              <label class="label-field">Жирность:</label>
+
+              <div class="radio-field-group">
+                <p class="radio-field">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-fat-1" name="filter-fat">
+                  <label class="radio-label" for="filter-fat-1">0%</label>
+                </p>
+
+                <p class="radio-field">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-fat-2" name="filter-fat" checked="checked">
+                  <label class="radio-label" for="filter-fat-2">до 10%</label>
+                </p>
+
+                <p class="radio-field">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-fat-3" name="filter-fat">
+                  <label class="radio-label" for="filter-fat-3">до 30%</label>
+                </p>
+
+                <p class="radio-field">
+                  <input class="radio-input visually-hidden" type="radio" id="filter-fat-4" name="filter-fat">
+                  <label class="radio-label" for="filter-fat-4">выше 30%</label>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-field">
+              <label class="label-field">Наполнители:</label>
+
+              <div class="checkbox-field-group">
+                <p class="checkbox-field">
+                  <input class="checkbox-input visually-hidden" type="checkbox" id="filter-stuff-1" name="filter-stuff" checked="checked">
+                  <label class="checkbox-label" for="filter-stuff-1">шоколадные</label>
+                </p>
+
+                <p class="checkbox-field">
+                  <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-2" name="filter-stuff" checked="checked">
+                  <label class="checkbox-label" for="filter-staff-2">сахарные присыпки</label>
+                </p>
+
+                <p class="checkbox-field">
+                  <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-3" name="filter-stuff">
+                  <label class="checkbox-label" for="filter-staff-3">фрукты</label>
+                </p>
+
+                <p class="checkbox-field">
+                  <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-4" name="filter-stuff">
+                  <label class="checkbox-label" for="filter-staff-4">сиропы</label>
+                </p>
+
+                <p class="checkbox-field">
+                  <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-5" name="filter-stuff">
+                  <label class="checkbox-label" for="filter-staff-5">джемы</label>
+                </p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <button class="button" type="submit">Применить</button>
+            </div>
+          </div>
+        </form>
 
         <ul class="catalog-list">
           <li class="catalog-list-item">
