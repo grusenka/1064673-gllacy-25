@@ -119,3 +119,19 @@ body {
 .form-group-actions .links {
   list-style: none;
 }
+
+.contacts {
+  font-weight: 700;
+}
+
+.contacts-work-hours {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts-phone {
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
