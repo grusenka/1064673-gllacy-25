@@ -102,3 +102,16 @@ body {
 .site-navigation-submenu-link:focus {
   background-image: linear-gradient(transparent 2px, #fbded7 2px, #fbded7 30px, transparent 30px);
 }
+
+.action-button {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.action-button:hover {
+  color: #323232;
+  background-color: #f8f7f4;
+}
