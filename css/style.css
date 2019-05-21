@@ -115,3 +115,7 @@ body {
   color: #323232;
   background-color: #f8f7f4;
 }
+
+.form-group-actions .links {
+  list-style: none;
+}
