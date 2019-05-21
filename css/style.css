@@ -151,6 +151,32 @@ body {
   list-style: none;
 }
 
+.discount-list {
+  list-style: none;
+  font-weight: 700;
+}
+
+.discount-list-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.discount-list-text {
+  font-size: 18px;
+}
+
+.discount-list-item-raspberries {
+  background-image: url('../img/discount-list-item-raspberries.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.discount-list-item-chocolate {
+  background-image: url('../img/discount-list-item-chocolate.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .about {
   color: #323232;
   background-color: #efe4cd;
