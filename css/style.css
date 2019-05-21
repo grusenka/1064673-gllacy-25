@@ -200,3 +200,8 @@ body {
 .main-footer-links {
   list-style: none;
 }
+
+.main-footer-links {
+  font-size: 13px;
+  line-height: 18px;
+}
