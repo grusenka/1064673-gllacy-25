@@ -135,3 +135,20 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+.about {
+  color: #323232;
+  background-color: #efe4cd;
+  background-image: url('../img/about.jpg');
+  background-position: 0 0;
+}
+
+.about-text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.about-briefly-list {
+  list-style: none;
+}
