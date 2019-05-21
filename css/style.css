@@ -172,3 +172,26 @@ body {
   font-weight: 700;
   color: inherit;
 }
+
+.subscription {
+  position: relative;
+  z-index: 1;
+  color: #323232;
+  background-image:
+    repeating-linear-gradient(-45deg,
+      #f8f7f4 0px, #f8f7f4 10px,
+      #92cdff 10px, #92cdff 20px,
+      #f8f7f4 20px, #f8f7f4 30px,
+      #fe9e90 30px, #fe9e90 40px);
+}
+
+.subscription::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  z-index: -1;
+  background-color: #f8f7f4;
+}
