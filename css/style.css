@@ -136,6 +136,21 @@ body {
   color: #ffffff;
 }
 
+.promo-slides {
+  list-style: none;
+  text-align: center;
+}
+
+.promo-slide-title {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: 700;
+}
+
+.promo-controls {
+  list-style: none;
+}
+
 .about {
   color: #323232;
   background-color: #efe4cd;
