@@ -205,3 +205,9 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
+
+.main-footer-copyright {
+  font-size: 12px;
+  line-height: 16px;
+  color: #fefefe;
+}
