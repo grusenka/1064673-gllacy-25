@@ -20,3 +20,26 @@ body {
   color: #ffffff;
   background-color: #9d8b84;
 }
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.link:hover,
+.link:focus {
+  color: #ffbc9e;
+  border-bottom-color: rgba(249, 172, 159, .3);
+}
+
+.link-theme-light {
+  color: #323232;
+  border-bottom-color: rgba(0, 0, 0, .3);
+}
+
+.link-theme-light:hover,
+.link-theme-light:active {
+  color: #e84d37;
+  border-bottom-color: rgba(236, 89, 60, .3);
+}
