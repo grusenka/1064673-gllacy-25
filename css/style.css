@@ -196,6 +196,7 @@ body {
   background-color: #f8f7f4;
 }
 
-.main-footer-socials {
+.main-footer-socials,
+.main-footer-links {
   list-style: none;
 }
