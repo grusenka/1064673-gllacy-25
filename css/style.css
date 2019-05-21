@@ -5,3 +5,18 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
+
+.theme-green {
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.theme-grey {
+  color: #ffffff;
+  background-color: #8996a6;
+}
+
+.theme-brown {
+  color: #ffffff;
+  background-color: #9d8b84;
+}
