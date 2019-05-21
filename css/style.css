@@ -177,6 +177,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hits-catalog-list {
+  list-style: none;
+}
+
 .about {
   color: #323232;
   background-color: #efe4cd;
