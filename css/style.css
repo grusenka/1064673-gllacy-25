@@ -181,6 +181,23 @@ body {
   list-style: none;
 }
 
+.product-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+}
+
+.product-price-weight {
+  font-size: 30px;
+}
+
 .about {
   color: #323232;
   background-color: #efe4cd;
