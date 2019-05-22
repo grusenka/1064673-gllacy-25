@@ -340,17 +340,15 @@ body {
   font-size: 18px;
 }
 
-.discount-list-item {
-  background-color: #a60132;
-}
-
 .discount-list-item-raspberries {
+  background-color: #8b152e;
   background-image: url('../img/discount-list-item-raspberries.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .discount-list-item-chocolate {
+  background-color: #714c3b;
   background-image: url('../img/discount-list-item-chocolate.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
