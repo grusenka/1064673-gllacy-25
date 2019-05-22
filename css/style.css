@@ -344,6 +344,7 @@ body {
   background-color: #8b152e;
   background-image: url('../img/discount-list-item-raspberries.jpg');
   background-position: 0 0;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -351,6 +352,7 @@ body {
   background-color: #714c3b;
   background-image: url('../img/discount-list-item-chocolate.jpg');
   background-position: 0 0;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
