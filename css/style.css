@@ -274,6 +274,17 @@ body {
   background-image: linear-gradient(transparent 2px, #fbded7 2px, #fbded7 30px, transparent 30px);
 }
 
+.site-navigation-submenu-link:active {
+  background-image: linear-gradient(transparent 2px, #f6b5a5 2px, #f6b5a5 30px, transparent 30px);
+}
+
+.site-navigation-submenu-link-current,
+.site-navigation-submenu-link-current:hover,
+.site-navigation-submenu-link-current:focus {
+  color: #ffffff;
+  background-image: linear-gradient(transparent 2px, #d07058 2px, #d07058 30px, transparent 30px);
+}
+
 .action-button {
   font-size: 14px;
   line-height: 32px;
