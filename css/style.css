@@ -201,6 +201,10 @@ body {
   list-style: none;
 }
 
+.main-footer-socials .social-button {
+  font-size: 0;
+}
+
 .main-footer-links {
   font-size: 13px;
   line-height: 18px;
