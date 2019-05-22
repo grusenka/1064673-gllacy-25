@@ -168,15 +168,10 @@ body {
 .pagination-button-current {
   color: #323232;
   background-color: #ffffff;
-  cursor: default;
 }
 
 .pagination-button-current:hover {
   background-color: #ffffff;
-}
-
-.pagination-button-disabled {
-  cursor: default;
 }
 
 .pagination-button-back,
