@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="theme-green">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -13,7 +16,9 @@
 
         <ul class="site-navigation">
           <li class="site-navigation-item">
-            <a class="link" href="catalog.html">Каталог</a>
+            <a class="site-navigation-link" href="catalog.html">
+              <span class="link">Каталог</span>
+            </a>
 
             <ul class="site-navigation-submenu">
               <li>
@@ -39,11 +44,15 @@
           </li>
 
           <li class="site-navigation-item">
-            <a class="link" href="#">Доставка и оплата</a>
+            <a class="site-navigation-link" href="#">
+              <span class="link">Доставка и оплата</span>
+            </a>
           </li>
 
           <li class="site-navigation-item">
-            <a class="link" href="#">О компании</a>
+            <a class="site-navigation-link" href="#">
+              <span class="link">О компании</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -83,11 +92,11 @@
 
               <ul class="links">
                 <li class="link-item">
-                  <a class="link" href="#">Забыли пароль</a>
+                  <a class="link link-theme-light" href="#">Забыли пароль</a>
                 </li>
 
                 <li class="link-item">
-                  <a class="link" href="#">Новая регистрация</a>
+                  <a class="link link-theme-light" href="#">Новая регистрация</a>
                 </li>
               </ul>
             </div>
@@ -195,13 +204,15 @@
         <ul class="hits-catalog-list">
           <li class="hits-catalog-list-item">
             <article class="product">
-              <h3 class="product-title">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h3>
+              <h3 class="product-title">
+                <a class="link" href="#">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</a>
+              </h3>
 
               <p class="product-photo">
                 <img src="img/product-01.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </p>
 
-              <p class="product-price">310 ₽<span>/кг</span></p>
+              <p class="product-price">310 ₽<span class="product-price-weight">/кг</span></p>
 
               <a href="#" class="button">Быстрый просмотр</a>
             </article>
@@ -209,13 +220,15 @@
 
           <li class="hits-catalog-list-item">
             <article class="product">
-              <h3 class="product-title">Сливочно-кофейное с&nbsp;кусочками шоколада</h3>
+              <h3 class="product-title">
+                <a class="link" href="#">Сливочно-кофейное с&nbsp;кусочками шоколада</a>
+              </h3>
 
               <p class="product-photo">
                 <img src="img/product-02.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </p>
 
-              <p class="product-price">380 ₽<span>/кг</span></p>
+              <p class="product-price">380 ₽<span class="product-price-weight">/кг</span></p>
 
               <a class="button" href="#">Быстрый просмотр</a>
             </article>
@@ -223,13 +236,15 @@
 
           <li class="hits-catalog-list-item">
             <article class="product">
-              <h3 class="product-title">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</h3>
+              <h3 class="product-title">
+                <a class="link" href="#">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a>
+              </h3>
 
               <p class="product-photo">
                 <img src="img/product-03.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </p>
 
-              <p class="product-price">355 ₽<span>/кг</span></p>
+              <p class="product-price">355 ₽<span class="product-price-weight">/кг</span></p>
 
               <a class="button" href="#">Быстрый просмотр</a>
             </article>
@@ -237,13 +252,15 @@
 
           <li class="hits-catalog-list-item">
             <article class="product">
-              <h3 class="product-title">Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
+              <h3 class="product-title">
+                <a class="link" href="#">Сливочное крем-брюле с&nbsp;карамельной подливкой</a>
+              </h3>
 
               <p class="product-photo">
                 <img src="img/product-04.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </p>
 
-              <p class="product-price">415 ₽<span>/кг</span></p>
+              <p class="product-price">415 ₽<span class="product-price-weight">/кг</span></p>
 
               <a class="button" href="#">Быстрый просмотр</a>
             </article>
@@ -330,19 +347,19 @@
 
       <ul class="main-footer-links">
         <li class="main-footer-links-item main-footer-links-item-favourite">
-          <a href="#">Для поставщиков</a>
+          <a class="link" href="#">Для поставщиков</a>
         </li>
 
         <li class="main-footer-links-item">
-          <a href="#">О производстве</a>
+          <a class="link" href="#">О производстве</a>
         </li>
 
         <li class="main-footer-links-item">
-          <a href="#">Наши документы</a>
+          <a class="link" href="#">Наши документы</a>
         </li>
 
         <li class="main-footer-links-item">
-          <a href="#">Экологические стандарты</a>
+          <a class="link" href="#">Экологические стандарты</a>
         </li>
       </ul>
 
