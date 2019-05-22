@@ -43,3 +43,62 @@ body {
   color: #e84d37;
   border-bottom-color: rgba(236, 89, 60, .3);
 }
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-link {
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  background-color: #f7f6f3;
+}
+
+.site-navigation-link:active {
+  background-color: #ededed;
+}
+
+.site-navigation-link-current,
+.site-navigation-link-current:hover,
+.site-navigation-link-current:focus {
+  background-color: #d07058;
+}
+
+.site-navigation-link:hover .link,
+.site-navigation-link:focus .link {
+  border: none;
+  color: #323232;
+}
+
+.site-navigation-link-current .link,
+.site-navigation-link:hover .link,
+.site-navigation-link:focus .link {
+  border: none;
+  color: #323232;
+}
+
+.site-navigation-link-current .link,
+.site-navigation-link-current:hover .link,
+.site-navigation-link-current:focus .link {
+  color: #ffffff;
+}
+
+.site-navigation-submenu {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.site-navigation-submenu-link {
+  line-height: 32px;
+  text-decoration: none;
+  color: #323232;
+}
+
+.site-navigation-submenu-link:hover,
+.site-navigation-submenu-link:focus {
+  background-image: linear-gradient(transparent 2px, #fbded7 2px, #fbded7 30px, transparent 30px);
+}
