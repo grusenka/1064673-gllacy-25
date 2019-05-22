@@ -44,6 +44,89 @@ body {
   border-bottom-color: rgba(236, 89, 60, .3);
 }
 
+.pagination {
+  display: flex;
+  list-style: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.pagination-button {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 26px;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.pagination-button:nth-child(-n + 99) {
+  min-width: 26px;
+  text-align: center;
+}
+
+.pagination-button:nth-child(n + 100) {
+  padding: 0 4px;
+}
+
+.pagination-button:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.pagination-button-current {
+  color: #323232;
+  background-color: #ffffff;
+  cursor: default;
+}
+
+.pagination-button-current:hover {
+  background-color: #ffffff;
+}
+
+.pagination-button-disabled {
+  cursor: default;
+}
+
+.pagination-button-back,
+.pagination-button-forward {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.pagination-button-back:hover,
+.pagination-button-forward:hover {
+  background: none;
+}
+
+.pagination-button-back::before,
+.pagination-button-forward::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.pagination-button-back::before {
+  border-width: 0 0 1px 1px;
+  transform: rotate(45deg) translateX(4px);
+}
+
+.pagination-button-forward::before {
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg) translateY(4px);
+}
+
+.pagination-button-disabled::before {
+  border-color: rgba(255, 255, 255, .2);
+}
+
 .site-navigation {
   list-style: none;
 }
@@ -200,7 +283,6 @@ body {
 
 .about {
   color: #323232;
-  background-color: #efe4cd;
   background-image: url('../img/about.jpg');
   background-position: 0 0;
 }
