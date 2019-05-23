@@ -415,6 +415,10 @@ body {
   background-color: #f8f7f4;
 }
 
+.user-menu-search .user-menu-dropdown {
+  width: 341px;
+}
+
 .contacts {
   font-weight: 700;
 }
