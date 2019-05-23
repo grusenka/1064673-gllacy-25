@@ -409,7 +409,9 @@ body {
 }
 
 .user-menu-dropdown {
+  padding: 20px 15px;
   color: #323232;
+  border-radius: 4px;
   background-color: #f8f7f4;
 }
 
