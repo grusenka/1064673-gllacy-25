@@ -130,6 +130,19 @@ body {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: '\00BB';
+  margin-left: 8px;
+}
+
 .pagination {
   display: flex;
   list-style: none;
