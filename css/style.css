@@ -255,6 +255,41 @@ body {
   border-color: rgba(255, 255, 255, .2);
 }
 
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.main-navigation {
+  display: inline-flex;
+  align-items: center;
+}
+
+.main-header .breadcrumbs-list {
+  align-self: flex-end;
+  width: 80%;
+}
+
+.main-header .contacts {
+  width: 20%;
+  text-align: right;
+}
+
+.main-header .user-menu + .contacts {
+  width: 100%;
+}
+
+.main-header-logo {
+  margin-right: 10px;
+}
+
+.main-header-logo img {
+  vertical-align: bottom;
+}
+
 .site-navigation {
   display: inline-flex;
   padding: 0;
