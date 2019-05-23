@@ -408,6 +408,14 @@ body {
   list-style: none;
 }
 
+.user-menu {
+  display: inline-flex;
+}
+
+.user-menu .action-button {
+  margin-left: 8px;
+}
+
 .user-menu-search,
 .user-menu-authorization,
 .user-menu-basket {
