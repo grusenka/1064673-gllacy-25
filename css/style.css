@@ -311,12 +311,24 @@ body {
 .site-navigation-submenu {
   position: absolute;
   left: -4px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   padding: 6px 0;
-  margin: 0;
   list-style: none;
   border-radius: 4px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
   background-color: #ffffff;
+  clip: rect(0 0 0 0);
+}
+
+.site-navigation-item:hover .site-navigation-submenu,
+.site-navigation-link:focus + .site-navigation-submenu,
+.site-navigation-submenu:focus-within {
+  width: auto;
+  height: auto;
+  margin: auto;
+  clip: auto;
 }
 
 .site-navigation-submenu-link {
