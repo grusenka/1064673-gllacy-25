@@ -436,6 +436,31 @@ body {
   background-color: #f8f7f4;
 }
 
+.location-contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.location-contacts-text-address {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.location-contacts-text-phone {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+  text-decoration: none;
+}
+
+.location-contacts-text-info {
+  line-height: 22px;
+}
+
 .main-footer-socials,
 .main-footer-links {
   list-style: none;
