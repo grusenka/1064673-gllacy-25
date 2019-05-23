@@ -419,6 +419,10 @@ body {
   width: 341px;
 }
 
+.user-menu-authorization .user-menu-dropdown {
+  width: 277px;
+}
+
 .contacts {
   font-weight: 700;
 }
