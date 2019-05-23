@@ -269,6 +269,10 @@ body {
   text-decoration: none;
 }
 
+.site-navigation-item {
+  position: relative;
+}
+
 .site-navigation-link:hover,
 .site-navigation-link:focus {
   background-color: #f7f6f3;
@@ -304,6 +308,8 @@ body {
 }
 
 .site-navigation-submenu {
+  position: absolute;
+  left: -4px;
   padding: 0;
   margin: 0;
   list-style: none;
