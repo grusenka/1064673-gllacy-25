@@ -19,6 +19,14 @@ body {
   background-color: #9d8b84;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
 .link {
   text-decoration: none;
   color: #ffffff;
