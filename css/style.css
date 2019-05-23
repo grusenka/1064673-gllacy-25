@@ -165,6 +165,7 @@ body {
 }
 
 .breadcrumbs-list {
+  display: inline-flex;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -175,6 +176,10 @@ body {
 .breadcrumbs-item:not(:last-child)::after {
   content: '\00BB';
   margin-left: 8px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination {
