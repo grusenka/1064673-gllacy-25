@@ -300,16 +300,82 @@ body {
 }
 
 .action-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 0 16px;
   font-size: 14px;
   line-height: 32px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
+  border-radius: 32px;
   background-color: rgba(255, 255, 255, .2);
 }
 
-.action-button:hover {
+.action-button::before {
+  content: '';
+  background-repeat: no-repeat;
+}
+
+.action-button:hover,
+.action-button:focus {
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.action-button-search {
+  width: 32px;
+  padding: 0;
+  font-size: 0;
+}
+
+.action-button-search::before {
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/action-button-search.svg')
+}
+
+.action-button-search:hover::before,
+.action-button-search:focus::before {
+  background-image: url('../img/action-button-search-hover.svg')
+}
+
+.action-button-login::before {
+  width: 21px;
+  height: 19px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-login.svg');
+}
+
+.action-button-login:hover::before,
+.action-button-login:focus::before {
+  background-image: url('../img/action-button-login-hover.svg');
+}
+
+.action-button-basket::before {
+  width: 21px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-basket.svg');
+}
+
+.action-button-basket:not(.action-button-basket-fill):hover::before,
+.action-button-basket:not(.action-button-basket-fill):focus::before {
+  background-image: url('../img/action-button-basket-hover.svg');
+}
+
+.action-button-basket-fill {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.action-button-basket-fill::before {
+  width: 21px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-basket-fill.svg');
 }
 
 .form-group-actions .links {
