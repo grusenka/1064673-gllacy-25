@@ -440,6 +440,13 @@ body {
   width: 277px;
 }
 
+[class^='user-menu-']:hover .user-menu-dropdown,
+.user-menu [class^='action-button-']:focus .user-menu-dropdown,
+.user-menu [class^='user-menu-']:focus-within .user-menu-dropdown {
+  height: auto;
+  clip: auto;
+}
+
 .contacts {
   font-weight: 700;
 }
