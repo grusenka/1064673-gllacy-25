@@ -537,6 +537,7 @@ body {
 }
 
 .contacts-work-hours {
+  margin: 0 0 8px 0;
   font-size: 14px;
   line-height: 16px;
 }
