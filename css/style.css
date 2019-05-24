@@ -810,6 +810,7 @@ body {
 }
 
 .about {
+  margin-bottom: 40px;
   color: #323232;
   background-image: url('../img/about.jpg');
   background-position: 0 0;
