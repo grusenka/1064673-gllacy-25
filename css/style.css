@@ -817,12 +817,15 @@ body {
 }
 
 .about-text {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .about-briefly-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
