@@ -713,6 +713,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.hits {
+  margin-bottom: 40px;
+}
+
 .hits-catalog-list {
   margin: 0;
   padding: 0;
