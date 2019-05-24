@@ -20,6 +20,8 @@ body {
 }
 
 .gllacy-shop {
+  position: relative;
+  z-index: 1;
   width: 1146px;
   padding: 0 27px;
   margin: 0 auto;
@@ -621,7 +623,12 @@ body {
 }
 
 .promo-slide-image {
+  position: absolute;
   margin: 0;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
 }
 
 .promo-controls {
