@@ -187,6 +187,41 @@ body {
   outline: none;
 }
 
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.checkbox-label::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  margin-right: 12px;
+  opacity: .8;
+  background: url('../img/checkbox-field.svg') no-repeat;
+  background-size: 20px 20px;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-image: url('../img/checkbox-field-checked.svg');
+  background-size: 24px 20px;
+}
+
+.checkbox-label:hover::before,
+.checkbox-input:focus + .checkbox-label::before {
+  opacity: 1;
+}
+
+.checkbox-input:disabled + .checkbox-label::before {
+  opacity: .4;
+}
+
+.checkbox-input:focus + .checkbox-label::before {
+  outline: 1px dotted #212121; /* todo: сделать кросбраузерно */
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .form-field {
   margin: 0;
 }
