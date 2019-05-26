@@ -312,6 +312,7 @@ body {
   display: inline-block;
   padding: 0 14px;
   line-height: 32px;
+  font-weight: 700;
   border-radius: 14px;
   text-decoration: none;
 }
