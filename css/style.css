@@ -304,7 +304,7 @@ body {
 .site-navigation {
   display: inline-flex;
   padding: 0;
-  margin: 0;
+  margin: -8px 0 0;
   list-style: none;
 }
 
@@ -510,6 +510,7 @@ body {
 
 .user-menu {
   display: inline-flex;
+  margin-top: -8px;
 }
 
 .user-menu .action-button {
@@ -682,10 +683,10 @@ body {
   color: #323232;
   background-image:
     repeating-linear-gradient(-45deg,
-      #f8f7f4 0px, #f8f7f4 10px,
-      #92cdff 10px, #92cdff 20px,
-      #f8f7f4 20px, #f8f7f4 30px,
-      #fe9e90 30px, #fe9e90 40px);
+    #f8f7f4 0px, #f8f7f4 10px,
+    #92cdff 10px, #92cdff 20px,
+    #f8f7f4 20px, #f8f7f4 30px,
+    #fe9e90 30px, #fe9e90 40px);
 }
 
 .subscription::before {
