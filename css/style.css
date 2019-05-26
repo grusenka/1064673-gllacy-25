@@ -538,7 +538,11 @@ body {
 }
 
 .user-menu-dropdown:hover .menu-dropdown,
-.action-button-dropdown:focus .menu-dropdown,
+.action-button-dropdown:focus .menu-dropdown {
+  height: auto;
+  clip: auto;
+}
+
 .user-menu-dropdown:focus-within .menu-dropdown {
   height: auto;
   clip: auto;
