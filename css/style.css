@@ -501,13 +501,11 @@ body {
   margin-left: 8px;
 }
 
-.user-menu-search,
-.user-menu-authorization,
-.user-menu-basket {
+.user-menu-dropdown {
   position: relative;
 }
 
-.user-menu-dropdown {
+.menu-dropdown {
   position: absolute;
   right: 0;
   padding: 20px 15px;
@@ -517,17 +515,17 @@ body {
   background-color: #f8f7f4;
 }
 
-.user-menu-search .user-menu-dropdown {
+.user-menu-search .menu-dropdown {
   width: 341px;
 }
 
-.user-menu-authorization .user-menu-dropdown {
+.user-menu-authorization .menu-dropdown {
   width: 277px;
 }
 
-[class^='user-menu-']:hover .user-menu-dropdown,
-.user-menu [class^='action-button-']:focus .user-menu-dropdown,
-.user-menu [class^='user-menu-']:focus-within .user-menu-dropdown {
+.user-menu-dropdown:hover .menu-dropdown,
+.action-button-dropdown:focus .menu-dropdown,
+.user-menu-dropdown:focus-within .menu-dropdown {
   height: auto;
   clip: auto;
 }
