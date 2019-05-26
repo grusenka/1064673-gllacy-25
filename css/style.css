@@ -529,6 +529,14 @@ body {
   background-color: #f8f7f4;
 }
 
+.menu-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  width: 100%;
+  height: 4px;
+}
+
 .user-menu-search .menu-dropdown {
   width: 341px;
 }
