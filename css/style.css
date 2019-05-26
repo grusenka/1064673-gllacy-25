@@ -370,7 +370,13 @@ body {
 }
 
 .site-navigation-item:hover .site-navigation-submenu,
-.site-navigation-link:focus + .site-navigation-submenu,
+.site-navigation-link:focus + .site-navigation-submenu {
+  width: auto;
+  height: auto;
+  margin: auto;
+  clip: auto;
+}
+
 .site-navigation-submenu:focus-within {
   width: auto;
   height: auto;
