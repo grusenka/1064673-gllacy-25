@@ -19,6 +19,12 @@ body {
   background-color: #9d8b84;
 }
 
+.gllacy-shop {
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
