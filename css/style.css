@@ -440,6 +440,7 @@ body {
 
 .action-button::before {
   content: '';
+  display: inline-block;
   background-repeat: no-repeat;
 }
 
@@ -458,7 +459,7 @@ body {
 .action-button-search::before {
   width: 17px;
   height: 17px;
-  background-image: url('../img/action-button-search.svg')
+  background-image: url('../img/action-button-search.svg');
 }
 
 .action-button-search:hover::before,
