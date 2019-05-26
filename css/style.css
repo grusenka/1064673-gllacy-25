@@ -156,6 +156,21 @@ body {
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, .52);
 }
 
+.text-field::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.text-field:-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.text-field::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
 .text-field::placeholder {
   font-weight: 400;
   color: #999999;
@@ -254,11 +269,13 @@ body {
 
 .pagination-button-back::before {
   border-width: 0 0 1px 1px;
+  -webkit-transform: rotate(45deg) translateX(4px);
   transform: rotate(45deg) translateX(4px);
 }
 
 .pagination-button-forward::before {
   border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(45deg) translateY(4px);
   transform: rotate(45deg) translateY(4px);
 }
 
