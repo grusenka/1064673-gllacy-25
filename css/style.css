@@ -645,6 +645,7 @@ body {
   top: 0;
   left: 50%;
   z-index: -1;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -1102,6 +1103,7 @@ body {
   margin-top: 18px;
   font-size: 13px;
   line-height: 18px;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -1132,6 +1134,7 @@ body {
   width: 15px;
   height: 13px;
   background-image: url('../img/main-footer-links-list-item-favourite.svg');
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
