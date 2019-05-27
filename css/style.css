@@ -257,6 +257,7 @@ body {
   position: absolute;
   left: 11px;
   top: 11px;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 4px solid rgba(255, 255, 255, .8);
   border-radius: 50%;
@@ -327,8 +328,9 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
+  -webkit-transform-style: flat;
   transform-style: flat;
 }
 
@@ -344,7 +346,9 @@ body {
 
 .noUi-state-tap .noUi-connect,
 .noUi-state-tap .noUi-origin {
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .noUi-handle {
@@ -358,6 +362,7 @@ body {
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
