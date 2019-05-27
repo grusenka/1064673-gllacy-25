@@ -877,17 +877,20 @@ body {
 }
 
 .post-anons {
+  box-sizing: border-box;
   width: 560px;
+  padding: 20px;
   color: #323232;
+  border-radius: 14px;
   background-color: #ffffff;
   background-image: url('../img/post-anons.jpg');
-  background-position: 0 0;
+  background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .post-anons-subtitle {
-  margin: 0;
+  margin: 0 0 6px 0;
   font-weight: 500;
 }
 
@@ -899,7 +902,6 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  text-decoration: none;
   color: inherit;
 }
 
