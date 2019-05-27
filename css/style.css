@@ -632,9 +632,33 @@ body {
 }
 
 .promo-controls {
-  margin: 0;
+  position: absolute;
+  display: inline-flex;
+  margin: -42px 0 0;
   padding: 0;
   list-style: none;
+}
+
+.promo-controls-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.promo-controls-button {
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  vertical-align: top;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+}
+
+.promo-controls-button:not(.promo-controls-button-current):hover {
+  background-color: rgba(248, 247, 244, .4);
+}
+
+.promo-controls-button-current {
+  background-color: #ffffff;
 }
 
 .discount-list {
