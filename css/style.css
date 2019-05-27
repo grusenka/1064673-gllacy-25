@@ -661,6 +661,10 @@ body {
   background-color: #ffffff;
 }
 
+.discount {
+  margin-bottom: 40px;
+}
+
 .discount-list {
   margin: 0;
   padding: 0;
