@@ -579,6 +579,7 @@ body {
 .menu-dropdown {
   position: absolute;
   right: 0;
+  box-sizing: border-box;
   padding: 20px 15px;
   margin-top: 4px;
   color: #323232;
@@ -594,14 +595,6 @@ body {
   height: 4px;
 }
 
-.user-menu-search .menu-dropdown {
-  width: 341px;
-}
-
-.user-menu-authorization .menu-dropdown {
-  width: 277px;
-}
-
 .user-menu-dropdown:hover .menu-dropdown,
 .action-button-dropdown:focus .menu-dropdown {
   height: auto;
@@ -611,6 +604,99 @@ body {
 .user-menu-dropdown:focus-within .menu-dropdown {
   height: auto;
   clip: auto;
+}
+
+.user-menu-search:hover .menu-dropdown {
+  width: 341px;
+}
+
+.user-menu-authorization:hover .menu-dropdown {
+  width: 277px;
+}
+
+.user-menu-basket:hover .menu-dropdown {
+  width: 540px;
+}
+
+.basket-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-table-cell {
+  padding-bottom: 18px;
+  vertical-align: baseline;
+}
+
+.basket-table-cell:nth-child(1) {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+.basket-table-cell:nth-child(3) {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.basket-table-cell:nth-child(4) {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.basket-table-cell:nth-child(5) {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.remove-table-row {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  vertical-align: bottom;
+  border: none;
+  background: url('../img/remove-table-row.svg') 50% 50% no-repeat;
+  background-size: 11px 11px;
+}
+
+.basket-table-cell-image {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin: 0;
+  vertical-align: bottom;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+.basket-table-cell-image img {
+  display: block;
+}
+
+.basket-table-cell-text-marked {
+  color: #999999;
+}
+
+.basket-table-cell-nowrap {
+  white-space: nowrap;
+}
+
+.basket-table-cell-total {
+  padding: 16px 0 13px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: right;
+  border-top: 1px solid #cacac7;
+}
+
+.user-menu-basket .button {
+  margin-left: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .contacts {
