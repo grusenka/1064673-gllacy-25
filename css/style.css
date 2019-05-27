@@ -19,6 +19,14 @@ body {
   background-color: #9d8b84;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
 .link {
   text-decoration: none;
   color: #ffffff;
@@ -45,7 +53,7 @@ body {
 .button {
   display: inline-block;
   padding: 0 22px;
-  height: 44px;
+  height: 46px;
   font-size: 18px;
   line-height: 46px;
   font-weight: 700;
@@ -130,6 +138,50 @@ body {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.text-field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 0 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  color: #323232;
+  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, .52);
+}
+
+.text-field::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.text-field:hover {
+  box-shadow: inset 0 0 0 2px rgba(154, 154, 154, .52);
+}
+
+.text-field:focus {
+  box-shadow: inset 0 0 0 2px rgba(46, 136, 228, .54);
+  outline: none;
+}
+
+.breadcrumbs-list {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: '\00BB';
+  margin-left: 8px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination {
   display: flex;
   list-style: none;
@@ -208,13 +260,58 @@ body {
   border-color: rgba(255, 255, 255, .2);
 }
 
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.main-navigation {
+  display: inline-flex;
+  align-items: center;
+}
+
+.main-header .breadcrumbs-list {
+  align-self: flex-end;
+  width: 80%;
+}
+
+.main-header .contacts {
+  width: 20%;
+  text-align: right;
+}
+
+.main-header .user-menu + .contacts {
+  width: 100%;
+}
+
+.main-header-logo {
+  margin-right: 10px;
+}
+
+.main-header-logo img {
+  vertical-align: bottom;
+}
+
 .site-navigation {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .site-navigation-link {
+  display: inline-block;
+  padding: 0 14px;
   line-height: 32px;
+  border-radius: 14px;
   text-decoration: none;
+}
+
+.site-navigation-item {
+  position: relative;
 }
 
 .site-navigation-link:hover,
@@ -252,13 +349,34 @@ body {
 }
 
 .site-navigation-submenu {
+  position: absolute;
+  left: -4px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 6px 0;
   list-style: none;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
   background-color: #ffffff;
+  clip: rect(0 0 0 0);
+}
+
+.site-navigation-item:hover .site-navigation-submenu,
+.site-navigation-link:focus + .site-navigation-submenu,
+.site-navigation-submenu:focus-within {
+  width: auto;
+  height: auto;
+  margin: auto;
+  clip: auto;
 }
 
 .site-navigation-submenu-link {
+  display: block;
+  padding: 0 20px;
   line-height: 32px;
   text-decoration: none;
+  white-space: nowrap;
   color: #323232;
 }
 
@@ -278,21 +396,138 @@ body {
   background-image: linear-gradient(transparent 2px, #d07058 2px, #d07058 30px, transparent 30px);
 }
 
+.site-navigation-submenu-link-marked {
+  position: relative;
+  font-weight: 700;
+}
+
+.site-navigation-submenu-link-marked::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 9px;
+  bottom: 0;
+  border-bottom: 1px solid rgba(53, 53, 53, .2);
+}
+
 .action-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 0 16px;
   font-size: 14px;
   line-height: 32px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
+  border-radius: 32px;
   background-color: rgba(255, 255, 255, .2);
 }
 
-.action-button:hover {
+.action-button::before {
+  content: '';
+  background-repeat: no-repeat;
+}
+
+.action-button:hover,
+.action-button:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
 
+.action-button-search {
+  width: 32px;
+  padding: 0;
+  font-size: 0;
+}
+
+.action-button-search::before {
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/action-button-search.svg')
+}
+
+.action-button-search:hover::before,
+.action-button-search:focus::before {
+  background-image: url('../img/action-button-search-hover.svg')
+}
+
+.action-button-login::before {
+  width: 21px;
+  height: 19px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-login.svg');
+}
+
+.action-button-login:hover::before,
+.action-button-login:focus::before {
+  background-image: url('../img/action-button-login-hover.svg');
+}
+
+.action-button-basket::before {
+  width: 21px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-basket.svg');
+}
+
+.action-button-basket:not(.action-button-basket-fill):hover::before,
+.action-button-basket:not(.action-button-basket-fill):focus::before {
+  background-image: url('../img/action-button-basket-hover.svg');
+}
+
+.action-button-basket-fill {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.action-button-basket-fill::before {
+  width: 21px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url('../img/action-button-basket-fill.svg');
+}
+
 .form-group-actions .links {
   list-style: none;
+}
+
+.user-menu {
+  display: inline-flex;
+}
+
+.user-menu .action-button {
+  margin-left: 8px;
+}
+
+.user-menu-dropdown {
+  position: relative;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 0;
+  padding: 20px 15px;
+  margin-top: 4px;
+  color: #323232;
+  border-radius: 4px;
+  background-color: #f8f7f4;
+}
+
+.user-menu-search .menu-dropdown {
+  width: 341px;
+}
+
+.user-menu-authorization .menu-dropdown {
+  width: 277px;
+}
+
+.user-menu-dropdown:hover .menu-dropdown,
+.action-button-dropdown:focus .menu-dropdown,
+.user-menu-dropdown:focus-within .menu-dropdown {
+  height: auto;
+  clip: auto;
 }
 
 .contacts {
@@ -300,6 +535,7 @@ body {
 }
 
 .contacts-work-hours {
+  margin: 0 0 8px 0;
   font-size: 14px;
   line-height: 16px;
 }
@@ -434,6 +670,31 @@ body {
   left: 5px;
   z-index: -1;
   background-color: #f8f7f4;
+}
+
+.location-contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.location-contacts-text-address {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.location-contacts-text-phone {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+  text-decoration: none;
+}
+
+.location-contacts-text-info {
+  line-height: 22px;
 }
 
 .main-footer-socials,
