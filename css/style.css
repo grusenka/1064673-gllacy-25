@@ -871,7 +871,13 @@ body {
   background-image: url('../img/about-briefly-list-item-delivery.svg');
 }
 
+.content-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .post-anons {
+  width: 560px;
   color: #323232;
   background-color: #ffffff;
   background-image: url('../img/post-anons.jpg');
@@ -894,6 +900,7 @@ body {
 .subscription {
   position: relative;
   z-index: 1;
+  width: 560px;
   color: #323232;
   background-image:
     repeating-linear-gradient(-45deg,
