@@ -886,6 +886,7 @@ body {
 .content-group {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .post-anons {
