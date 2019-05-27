@@ -319,6 +319,51 @@ body {
   margin-top: 25px;
 }
 
+.form-group {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-group .form-field {
+  margin-bottom: 0;
+}
+
+.form-group .form-field:not(:last-child) {
+  margin-right: 16px;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.label-field {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.checkbox-field-group,
+.radio-field-group {
+  display: flex;
+  align-items: center;
+  padding: 7.5px 15px;
+  border-radius: 37px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.checkbox-field,
+.radio-field {
+  display: inline-flex;
+  margin: 0;
+}
+
+.checkbox-field:not(:last-child),
+.radio-field:not(:last-child) {
+  margin-right: 19px;
+}
+
 .breadcrumbs-list {
   display: inline-flex;
   padding: 0;
