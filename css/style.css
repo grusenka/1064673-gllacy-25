@@ -273,7 +273,7 @@ body {
 
 .pagination-button-back::before,
 .pagination-button-forward::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 11px;
   height: 11px;
@@ -935,7 +935,7 @@ body {
 }
 
 .subscription::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   right: 5px;
