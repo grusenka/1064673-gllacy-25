@@ -949,6 +949,10 @@ body {
   margin: 0 0 35px 0;
 }
 
+.location {
+  height: 430px;
+}
+
 .location-contacts {
   font-size: 14px;
   line-height: 20px;
