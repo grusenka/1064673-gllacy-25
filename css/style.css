@@ -435,6 +435,13 @@ body {
   margin-right: 19px;
 }
 
+.range-field {
+  width: 176px;
+  padding: 16.5px 20px;
+  border-radius: 37px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
 .breadcrumbs-list {
   display: inline-flex;
   padding: 0;
