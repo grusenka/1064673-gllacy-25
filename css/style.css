@@ -187,8 +187,12 @@ body {
   outline: none;
 }
 
-.form .form-field {
+.form-field {
   margin: 0;
+}
+
+.form-field:not(:only-child) {
+  margin-bottom: 20px;
 }
 
 .form-field-horizontal {
@@ -197,6 +201,18 @@ body {
 
 .form-field-horizontal .button {
   margin-left: 10px;
+}
+
+.form-group-actions {
+  display: flex;
+}
+
+.form-group-actions .links {
+  margin: 0 0 0 19px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  list-style: none;
 }
 
 .form-actions {
@@ -545,10 +561,6 @@ body {
   height: 20px;
   margin-right: 8px;
   background-image: url('../img/action-button-basket-fill.svg');
-}
-
-.form-group-actions .links {
-  list-style: none;
 }
 
 .user-menu {
