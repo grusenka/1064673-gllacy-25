@@ -1029,6 +1029,27 @@ body {
   width: 100%;
 }
 
+.catalog-title {
+  margin: 0 0 27px 0;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 77px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list-item {
+  margin-bottom: 37px;
+}
+
+.catalog-list-item:nth-last-child(-n+4) {
+  margin-bottom: 0;
+}
+
 .main-footer {
   display: flex;
   padding: 18px 0 24px;
