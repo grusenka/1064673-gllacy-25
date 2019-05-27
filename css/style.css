@@ -265,6 +265,27 @@ body {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.select-field {
+  box-sizing: border-box;
+  width: 194px;
+  height: 37px;
+  padding: 0 15px;
+  color: #ffffff;
+  border-radius: 37px;
+  border: none;
+  background-color: rgba(248, 247, 244, .2);
+  background-image: url('../img/select-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
 .form-field {
   margin: 0;
 }
