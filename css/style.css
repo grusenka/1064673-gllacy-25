@@ -598,6 +598,14 @@ body {
   text-align: center;
 }
 
+.promo-slide  {
+  display: none;
+}
+
+.promo-slide.opened {
+  display: block;
+}
+
 .promo-slide-title {
   font-size: 60px;
   line-height: 60.35px;
