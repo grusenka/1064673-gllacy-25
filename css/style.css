@@ -950,23 +950,58 @@ body {
 }
 
 .location {
+  position: relative;
+  display: flex;
   height: 430px;
+  margin-left: calc(-50vmax + 600px - 27px);
+  margin-right: calc(-50vmax + 600px - 27px);
+  padding-left: calc(50vmax - 600px + 27px);
+  padding-right: calc(50vmax - 600px + 27px);
+}
+
+.location-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.location-map img {
+  width: 100%;
 }
 
 .location-contacts {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 302px;
+  margin: auto 0 auto auto;
+  padding: 30px 25px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
+  border-radius: 14px;
   background-color: #ffffff;
 }
 
+.location-contacts-text {
+  margin: 0;
+}
+
 .location-contacts-text-address {
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .location-contacts-text-phone {
+  display: block;
+  margin-top: 6px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -975,7 +1010,17 @@ body {
 }
 
 .location-contacts-text-info {
+  display: block;
+  margin-bottom: 24px;
   line-height: 22px;
+}
+
+.location-contacts-actions {
+  margin: 0;
+}
+
+.location-contacts-actions .button {
+  width: 100%;
 }
 
 .main-footer-socials,
