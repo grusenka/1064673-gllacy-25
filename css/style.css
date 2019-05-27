@@ -191,6 +191,14 @@ body {
   margin: 0;
 }
 
+.form-field-horizontal {
+  display: flex;
+}
+
+.form-field-horizontal .button {
+  margin-left: 10px;
+}
+
 .breadcrumbs-list {
   display: inline-flex;
   padding: 0;
