@@ -146,7 +146,8 @@ body {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
-.text-field {
+.text-field,
+.textarea-field {
   box-sizing: border-box;
   width: 100%;
   height: 44px;
@@ -158,33 +159,44 @@ body {
   box-shadow: inset 0 0 0 1px rgba(178, 178, 178, .52);
 }
 
-.text-field::-webkit-input-placeholder {
+.text-field::-webkit-input-placeholder,
+.textarea-field::-webkit-input-placeholder {
   font-weight: 400;
   color: #999999;
 }
 
-.text-field:-ms-input-placeholder {
+.text-field:-ms-input-placeholder,
+.textarea-field:-ms-input-placeholder {
   font-weight: 400;
   color: #999999;
 }
 
-.text-field::-ms-input-placeholder {
+.text-field::-ms-input-placeholder,
+.textarea-field::-ms-input-placeholder {
   font-weight: 400;
   color: #999999;
 }
 
-.text-field::placeholder {
+.text-field::placeholder,
+.textarea-field::placeholder {
   font-weight: 400;
   color: #999999;
 }
 
-.text-field:hover {
+.text-field:hover,
+.textarea-field:hover {
   box-shadow: inset 0 0 0 2px rgba(154, 154, 154, .52);
 }
 
-.text-field:focus {
+.text-field:focus,
+.textarea-field:focus {
   box-shadow: inset 0 0 0 2px rgba(46, 136, 228, .54);
   outline: none;
+}
+
+.textarea-field {
+  height: 155px;
+  padding: 10px 15px;
 }
 
 .checkbox-label {
