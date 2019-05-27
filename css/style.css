@@ -887,7 +887,12 @@ body {
 }
 
 .post-anons-subtitle {
+  margin: 0;
   font-weight: 500;
+}
+
+.post-anons-title {
+  margin: 0;
 }
 
 .post-anons-title a {
