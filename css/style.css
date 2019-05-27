@@ -774,6 +774,17 @@ body {
   font-size: 30px;
 }
 
+.product-hit::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 61px;
+  background-image: url('../img/product-hit.svg');
+  background-repeat: no-repeat;
+}
+
 .product .product-actions {
   order: 2;
 }
