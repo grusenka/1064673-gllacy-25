@@ -1029,6 +1029,11 @@ body {
   width: 100%;
 }
 
+.catalog {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
 .catalog-title {
   margin: 0 0 27px 0;
 }
