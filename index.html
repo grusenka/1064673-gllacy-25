@@ -372,7 +372,7 @@
             </p>
 
             <p class="location-contacts-actions">
-              <button class="button" type="button">Форма обратной связи</button>
+              <button class="button js-feedback-dialog-button" type="button">Форма обратной связи</button>
             </p>
           </div>
 
@@ -462,8 +462,22 @@
           </div>
         </form>
 
-        <button class="dialog-close" type="button">Закрыть</button>
+        <button class="dialog-close js-dialog-close-button" type="button">Закрыть</button>
       </section>
     </div>
+
+    <script>
+      var dialogOverlay = document.querySelector('.dialog-overlay');
+      var feedbackButton = document.querySelector('.js-feedback-dialog-button');
+
+      feedbackButton.addEventListener('click', function() {
+        dialogOverlay.classList.toggle('opened');
+      });
+
+      var dialogCloseButton = document.querySelector('.js-dialog-close-button');
+      dialogCloseButton.addEventListener('click', function(){
+        dialogOverlay.classList.toggle('opened');
+      });
+    </script>
   </body>
 </html>
