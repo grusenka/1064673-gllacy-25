@@ -187,6 +187,10 @@ body {
   outline: none;
 }
 
+.form .form-field {
+  margin: 0;
+}
+
 .breadcrumbs-list {
   display: inline-flex;
   padding: 0;
