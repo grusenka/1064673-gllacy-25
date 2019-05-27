@@ -675,16 +675,26 @@ body {
 }
 
 .discount-list-item {
+  box-sizing: border-box;
   width: 560px;
+  padding: 20px;
+  border-radius: 14px;
 }
 
 .discount-list-title {
+  margin: 0 0 15px 0;
   font-size: 35px;
   line-height: 41px;
 }
 
 .discount-list-text {
+  margin: 0 0 43px 0;
   font-size: 18px;
+}
+
+.discount-list-actions {
+  margin: 0;
+  text-align: right;
 }
 
 .discount-list-item-raspberries {
