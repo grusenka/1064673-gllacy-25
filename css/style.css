@@ -666,10 +666,16 @@ body {
 }
 
 .discount-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
   font-weight: 700;
+}
+
+.discount-list-item {
+  width: 560px;
 }
 
 .discount-list-title {
