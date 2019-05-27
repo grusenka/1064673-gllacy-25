@@ -437,31 +437,33 @@
       </footer>
     </div>
 
-    <section class="dialog">
-      <h2 class="dialog-title">Мы обязательно вам ответим!</h2>
+    <div class="dialog-overlay">
+      <section class="dialog">
+        <h2 class="dialog-title">Мы обязательно вам ответим!</h2>
 
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form-field">
-          <label class="visually-hidden" for="name">Имя</label>
-          <input class="text-field" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
-        </p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form-field">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input class="text-field" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+          </p>
 
-        <p class="form-field">
-          <label class="visually-hidden" for="email">Электронная почта</label>
-          <input class="text-field" type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required>
-        </p>
+          <p class="form-field">
+            <label class="visually-hidden" for="email">Электронная почта</label>
+            <input class="text-field" type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required>
+          </p>
 
-        <p class="form-field">
-          <label class="visually-hidden" for="message">Сообщение</label>
-          <textarea class="textarea-field" name="message" id="message" required>Напишите что-нибудь...</textarea>
-        </p>
+          <p class="form-field">
+            <label class="visually-hidden" for="message">Сообщение</label>
+            <textarea class="textarea-field" name="message" id="message" required>Напишите что-нибудь...</textarea>
+          </p>
 
-        <div class="form-actions">
-          <button class="button" type="submit">Отправить</button>
-        </div>
-      </form>
+          <div class="form-actions">
+            <button class="button" type="submit">Отправить</button>
+          </div>
+        </form>
 
-      <button class="dialog-close" type="button">Закрыть</button>
-    </section>
+        <button class="dialog-close" type="button">Закрыть</button>
+      </section>
+    </div>
   </body>
 </html>
