@@ -908,8 +908,11 @@ body {
 .subscription {
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
   width: 560px;
+  padding: 33px 27px 40px;
   color: #323232;
+  border-radius: 14px;
   background-image:
     repeating-linear-gradient(-45deg,
     #f8f7f4 0px, #f8f7f4 10px,
@@ -927,6 +930,10 @@ body {
   left: 5px;
   z-index: -1;
   background-color: #f8f7f4;
+}
+
+.subscription-text {
+  margin: 0 0 35px 0;
 }
 
 .location-contacts {
