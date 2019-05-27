@@ -6,6 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/nouislider@13.1.5/distribute/nouislider.min.js"></script>
   </head>
   <body class="theme-green">
     <div class="gllacy-shop">
@@ -209,7 +210,9 @@
                 </div>
 
                 <div class="form-field">
-                  <!-- тут будет слайдер -->
+                  <label class="label-field">Цена: 100 руб. – 500 руб.</label>
+
+                  <div class="js-filter-price"></div>
                 </div>
 
                 <div class="form-field">
@@ -575,5 +578,14 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      var range = document.querySelector('.js-filter-price');
+      var rangeSlider = noUiSlider.create(range, {
+        start: [250, 500],
+        connect: true,
+        range: {min: 50, max: 1000}
+      });
+    </script>
   </body>
 </html>
