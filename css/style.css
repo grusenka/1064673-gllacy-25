@@ -208,7 +208,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 20px;
-  margin-right: 12px;
+  margin-right: 8px;
   opacity: .8;
   background: url('../img/checkbox-field.svg') no-repeat;
   background-size: 20px 20px;
@@ -415,7 +415,7 @@ body {
 }
 
 .form-group .form-field:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 15px;
 }
 
 .form-group:not(:last-child) {
@@ -424,7 +424,7 @@ body {
 
 .label-field {
   display: block;
-  margin-bottom: 6px;
+  margin: 0 0 6px 15px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -434,7 +434,7 @@ body {
 .radio-field-group {
   display: flex;
   align-items: center;
-  padding: 7.5px 15px;
+  padding: 7px 15px;
   border-radius: 37px;
   background-color: rgba(255, 255, 255, .2);
 }
@@ -445,9 +445,12 @@ body {
   margin: 0;
 }
 
-.checkbox-field:not(:last-child),
+.checkbox-field:not(:last-child) {
+  margin-right: 20px;
+}
+
 .radio-field:not(:last-child) {
-  margin-right: 19px;
+  margin-right: 18px;
 }
 
 .range-field {
@@ -1381,13 +1384,12 @@ body {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
+.catalog-title {
+  margin: 0 0 35px 0;
+}
 
 .catalog-filter {
   margin-bottom: 40px;
-}
-
-.catalog-title {
-  margin: 0 0 27px 0;
 }
 
 .catalog-list {
