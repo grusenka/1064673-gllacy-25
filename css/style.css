@@ -1122,11 +1122,17 @@ body {
   position: absolute;
   top: 210px;
   left: 13px;
+  display: inline-flex;
+  align-items: baseline;
   margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, .5);
+}
+
+.product-price-currency {
+  margin-left: 4px;
 }
 
 .product-price-weight {
