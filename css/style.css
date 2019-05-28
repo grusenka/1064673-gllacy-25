@@ -1297,12 +1297,13 @@ body {
 
 .location {
   position: relative;
+  z-index: 1;
+  padding: 60px 0;
+}
+
+.location .container {
   display: flex;
-  height: 430px;
-  margin-left: calc(-50vmax + 600px - 27px);
-  margin-right: calc(-50vmax + 600px - 27px);
-  padding-left: calc(50vmax - 600px + 27px);
-  padding-right: calc(50vmax - 600px + 27px);
+  min-height: 310px;
 }
 
 .location-map {
@@ -1311,18 +1312,20 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
   margin: 0;
+  overflow: hidden;
 }
 
 .location-map img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .location-contacts {
-  position: relative;
-  z-index: 1;
   box-sizing: border-box;
-  width: 302px;
+  width: 300px;
   margin: auto 0 auto auto;
   padding: 30px 25px;
   font-size: 14px;
@@ -1338,8 +1341,7 @@ body {
 
 .location-contacts-text-address {
   display: block;
-  margin-top: 2px;
-  margin-bottom: 16px;
+  margin: 2px 0 16px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1357,12 +1359,11 @@ body {
 
 .location-contacts-text-info {
   display: block;
-  margin-bottom: 24px;
   line-height: 22px;
 }
 
 .location-contacts-actions {
-  margin: 0;
+  margin: 24px 0 0;
 }
 
 .location-contacts-actions .button {
