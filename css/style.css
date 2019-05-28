@@ -577,6 +577,7 @@ body {
 
 .main-header .breadcrumbs-list {
   align-self: flex-end;
+  margin-bottom: 4px;
   width: 80%;
 }
 
