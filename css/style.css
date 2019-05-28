@@ -1521,8 +1521,15 @@ body {
   color: #fefefe;
 }
 
+.html-academy-logo {
+  display: block;
+  width: 108px;
+}
+
 .html-academy-logo img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .main-footer-copyright-text {
