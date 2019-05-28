@@ -567,7 +567,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .main-navigation {
@@ -966,7 +966,7 @@ body {
 
 .promo-slide  {
   display: none;
-  padding-top: 260px; /* todo: перепроверить непонятный отступ */
+  padding-top: 265px;
 }
 
 .promo-slide.opened {
