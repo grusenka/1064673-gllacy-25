@@ -658,7 +658,7 @@ body {
 
 .site-navigation-submenu {
   position: absolute;
-  left: -4px;
+  left: -7px;
   z-index: 2;
   width: 1px;
   height: 1px;
@@ -675,7 +675,7 @@ body {
 .site-navigation-link:focus + .site-navigation-submenu {
   width: auto;
   height: auto;
-  margin: auto;
+  margin: 5px auto auto;
   clip: auto;
 }
 
