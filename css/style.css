@@ -686,6 +686,15 @@ body {
   clip: auto;
 }
 
+.site-navigation-item:hover .site-navigation-submenu::before,
+.site-navigation-link:focus + .site-navigation-submenu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 5px;
+}
+
 .site-navigation-submenu-link {
   display: block;
   padding: 0 20px;
