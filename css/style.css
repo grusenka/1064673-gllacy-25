@@ -834,7 +834,7 @@ body {
   right: 0;
   box-sizing: border-box;
   padding: 20px 15px;
-  margin-top: 4px;
+  margin-top: 5px;
   color: #323232;
   border-radius: 4px;
   background-color: #f8f7f4;
@@ -843,7 +843,7 @@ body {
 .menu-dropdown::before {
   content: '';
   position: absolute;
-  top: -4px;
+  top: -5px;
   width: 100%;
   height: 4px;
 }
