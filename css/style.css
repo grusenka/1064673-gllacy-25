@@ -849,6 +849,10 @@ body {
   height: 4px;
 }
 
+.user-menu-authorization .menu-dropdown {
+  padding: 20px;
+}
+
 .user-menu-dropdown:hover .menu-dropdown,
 .action-button-dropdown:focus .menu-dropdown {
   height: auto;
@@ -865,7 +869,7 @@ body {
 }
 
 .user-menu-authorization:hover .menu-dropdown {
-  width: 277px;
+  width: 280px;
 }
 
 .user-menu-basket:hover .menu-dropdown {
