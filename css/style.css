@@ -485,21 +485,16 @@ body {
   list-style: none;
 }
 
-.pagination-item:first-child {
-  margin-left: auto;
-}
-
 .pagination-item:not(:last-child) {
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .pagination-button {
-  display: inline-block;
-  box-sizing: border-box;
+  display: block;
   font-size: 16px;
   font-weight: 500;
-  text-decoration: none;
   line-height: 26px;
+  text-decoration: none;
   color: #ffffff;
   border-radius: 50%;
 }
@@ -517,20 +512,23 @@ body {
   background-color: rgba(255, 255, 255, .2);
 }
 
-.pagination-button-current {
-  color: #323232;
-  background-color: #ffffff;
-}
-
+.pagination-button-current,
 .pagination-button-current:hover {
+  color: #323232;
   background-color: #ffffff;
 }
 
 .pagination-button-back,
 .pagination-button-forward {
+  position: relative;
   font-size: 0;
-  width: 20px;
-  height: 20px;
+}
+
+.pagination-button-back {
+  margin-right: 5px;
+}
+.pagination-button-forward {
+  margin-left: 5px;
 }
 
 .pagination-button-back:hover,
@@ -541,23 +539,24 @@ body {
 .pagination-button-back::before,
 .pagination-button-forward::before {
   content: '';
-  display: inline-block;
-  width: 11px;
-  height: 11px;
+  position: absolute;
+  top: 8px;
+  width: 8px;
+  height: 8px;
   border-color: #ffffff;
   border-style: solid;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .pagination-button-back::before {
-  border-width: 0 0 1px 1px;
-  -webkit-transform: rotate(45deg) translateX(4px);
-  transform: rotate(45deg) translateX(4px);
+  left: 10px;
+  border-width: 0 0 1.3px 1.3px;
 }
 
 .pagination-button-forward::before {
-  border-width: 1px 1px 0 0;
-  -webkit-transform: rotate(45deg) translateY(4px);
-  transform: rotate(45deg) translateY(4px);
+  right: 10px;
+  border-width: 1.3px 1.3px 0 0;
 }
 
 .pagination-button-disabled::before {
@@ -1381,7 +1380,7 @@ body {
 }
 
 .catalog {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 .catalog-title {
@@ -1396,7 +1395,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 -13px 77px;
+  margin: 0 -13px 81px;
   padding: 0;
   list-style: none;
 }
@@ -1412,6 +1411,14 @@ body {
 
 .catalog-list-item:last-child {
   margin-right: auto;
+}
+
+.catalog .pagination {
+  margin-right: -8px;
+}
+
+.catalog .pagination-item:first-child {
+  margin-left: auto;
 }
 
 .main-footer {
