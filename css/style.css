@@ -1380,9 +1380,20 @@ body {
 }
 
 .catalog {
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  position: relative;
+  padding-bottom: 30px;
 }
+
+.catalog::before {
+  content: '';
+  position: absolute;
+  right: 27px;
+  left: 27px;
+  bottom: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
 .catalog-title {
   margin: 0 0 35px 0;
 }
