@@ -1108,7 +1108,6 @@ body {
 .product {
   position: relative;
   display: inline-flex;
-  align-items: center;
   flex-direction: column;
   width: 267px;
   padding: 0 13px;
@@ -1184,9 +1183,11 @@ body {
 .product:hover .product-actions {
   bottom: -59px;
   z-index: 1;
+  left: 50%;
   width: auto;
   height: auto;
   clip: auto;
+  transform: translateX(-50%);
 }
 
 .about {
