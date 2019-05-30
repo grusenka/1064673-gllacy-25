@@ -860,15 +860,18 @@ body {
   clip: auto;
 }
 
-.user-menu-search:hover .menu-dropdown {
+.user-menu-search:hover .menu-dropdown,
+.action-button-search:focus .menu-dropdown {
   width: 341px;
 }
 
-.user-menu-authorization:hover .menu-dropdown {
+.user-menu-authorization:hover .menu-dropdown,
+.action-button-login:focus .menu-dropdown {
   width: 280px;
 }
 
-.user-menu-basket:hover .menu-dropdown {
+.user-menu-basket:hover .menu-dropdown,
+.action-button-basket:focus .menu-dropdown {
   width: 540px;
 }
 
