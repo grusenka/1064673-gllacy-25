@@ -1182,7 +1182,7 @@ body {
 }
 
 .product:hover .product-actions {
-  bottom: -59px;
+  bottom: -52px;
   z-index: 1;
   left: 50%;
   width: auto;
