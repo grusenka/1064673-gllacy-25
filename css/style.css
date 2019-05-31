@@ -390,6 +390,7 @@ body {
 
 .form-field-horizontal .button {
   margin-left: 10px;
+  min-width: auto;
 }
 
 .form-group-actions {
