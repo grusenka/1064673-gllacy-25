@@ -1195,6 +1195,7 @@ body {
   left: 50%;
   width: auto;
   height: auto;
+  padding-bottom: 5px;
   clip: auto;
   transform: translateX(-50%);
 }
