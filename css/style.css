@@ -1165,6 +1165,7 @@ body {
 .product-hit::after {
   content: '';
   position: absolute;
+  top: 0;
   left: 13px;
   width: 61px;
   height: 61px;
