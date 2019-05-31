@@ -33,7 +33,7 @@ body {
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .link {
@@ -842,8 +842,9 @@ body {
   content: '';
   position: absolute;
   top: -5px;
-  width: 100%;
-  height: 4px;
+  right: 0;
+  width: 150px;
+  height: 5px;
 }
 
 .user-menu-authorization .menu-dropdown {
@@ -854,6 +855,7 @@ body {
 .action-button-dropdown:focus .menu-dropdown {
   height: auto;
   clip: auto;
+  overflow: visible;
 }
 
 .user-menu-dropdown:focus-within .menu-dropdown {
