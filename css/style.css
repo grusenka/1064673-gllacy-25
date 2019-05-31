@@ -858,11 +858,6 @@ body {
   overflow: visible;
 }
 
-.user-menu-dropdown:focus-within .menu-dropdown {
-  height: auto;
-  clip: auto;
-}
-
 .user-menu-search:hover .menu-dropdown,
 .action-button-search:focus .menu-dropdown {
   width: 341px;
@@ -876,6 +871,27 @@ body {
 .user-menu-basket:hover .menu-dropdown,
 .action-button-basket:focus .menu-dropdown {
   width: 540px;
+}
+
+.user-menu-search:focus-within .menu-dropdown {
+  width: 341px;
+  height: auto;
+  clip: auto;
+  overflow: visible;
+}
+
+.user-menu-authorization:focus-within .menu-dropdown {
+  width: 280px;
+  height: auto;
+  clip: auto;
+  overflow: visible;
+}
+
+.user-menu-basket:focus-within .menu-dropdown {
+  width: 540px;
+  height: auto;
+  clip: auto;
+  overflow: visible;
 }
 
 .basket-table {
