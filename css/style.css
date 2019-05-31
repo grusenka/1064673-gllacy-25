@@ -1114,7 +1114,7 @@ body {
 
 .product {
   position: relative;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   width: 267px;
   padding: 0 13px;
