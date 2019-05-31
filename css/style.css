@@ -155,10 +155,9 @@ body {
   height: 44px;
   padding: 0 15px;
   font-weight: 700;
-  border: none;
+  border: 1px solid rgba(178, 178, 178, .52);
   border-radius: 4px;
   color: #323232;
-  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, .52);
 }
 
 .text-field::-webkit-input-placeholder,
@@ -187,12 +186,16 @@ body {
 
 .text-field:hover,
 .textarea-field:hover {
-  box-shadow: inset 0 0 0 2px rgba(154, 154, 154, .52);
+  padding: 0 14px;
+  border-width: 2px;
+  border-color: rgba(154, 154, 154, .52);
 }
 
 .text-field:focus,
 .textarea-field:focus {
-  box-shadow: inset 0 0 0 2px rgba(46, 136, 228, .54);
+  padding: 0 14px;
+  border-width: 2px;
+  border-color: rgba(46, 136, 228, .54);
   outline: none;
 }
 
