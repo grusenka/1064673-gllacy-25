@@ -297,7 +297,7 @@ body {
   appearance: none;
 }
 
-.select::-ms-expand {
+.select-field::-ms-expand {
   display: none;
 }
 
