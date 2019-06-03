@@ -1218,6 +1218,7 @@ body {
   height: auto;
   padding-bottom: 5px;
   clip: auto;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
