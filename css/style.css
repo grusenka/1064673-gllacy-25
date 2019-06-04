@@ -1006,29 +1006,19 @@ body {
 }
 
 .promo-slides {
-  position: relative;
   margin: 0;
   padding: 0;
-  height: 479px;
   list-style: none;
   text-align: center;
-
 }
 
 .promo-slide  {
+  display: none;
   padding-top: 265px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0s 2s, opacity 2s;
 }
 
 .promo-slide.opened {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 3s;
+  display: block;
 }
 
 .promo-slide-title {
@@ -1040,7 +1030,7 @@ body {
 
 .promo-slide-image {
   position: absolute;
-  top: -127px;
+  top: 0;
   z-index: -1;
   display: flex;
   justify-content: center;
