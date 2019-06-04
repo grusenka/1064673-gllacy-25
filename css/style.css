@@ -1031,7 +1031,8 @@ body {
 }
 
 .promo-slide-title {
-  margin: 0 0 30px 0;
+  max-width: 670px;
+  margin: 0 auto 30px;
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
