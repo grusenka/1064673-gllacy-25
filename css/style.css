@@ -62,14 +62,12 @@ body {
 
 .button {
   display: inline-block;
-  padding: 0 22px;
+  padding: 11px 22px;
   min-width: 100px;
-  height: 46px;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 24px;
   font-weight: 700;
   text-decoration: none;
-  white-space: nowrap;
   color: #ffffff;
   border: 0;
   border-radius: 46px;
@@ -95,10 +93,9 @@ body {
 }
 
 .button-large {
-  height: 64px;
-  padding: 0 42px;
+  padding: 10px 42px;
   font-size: 32px;
-  line-height: 64px;
+  line-height: 44px;
   color: #ffffff;
   text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
   background:
