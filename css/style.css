@@ -1456,6 +1456,8 @@ body {
 }
 
 .catalog-title {
+  font-size: 35px;
+  line-height: 41px;
   margin: 0 0 35px 0;
 }
 
