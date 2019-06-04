@@ -1145,7 +1145,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 267px;
   padding: 0 13px;
 }
 
@@ -1160,7 +1159,8 @@ body {
 }
 
 .product-photo {
-  width: 100%;
+  width: 267px;
+  height: 267px;
   margin: 0 0 12px 0;
   border-radius: 50%;
   overflow: hidden;
@@ -1168,6 +1168,8 @@ body {
 
 .product-photo img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .product-price {
