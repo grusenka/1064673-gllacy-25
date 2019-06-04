@@ -1013,12 +1013,21 @@ body {
 }
 
 .promo-slide  {
-  display: none;
-  padding-top: 265px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 2s visibility, opacity 3s;
 }
 
 .promo-slide.opened {
-  display: block;
+  width: auto;
+  height: auto;
+  padding-top: 265px;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity;
 }
 
 .promo-slide-title {
