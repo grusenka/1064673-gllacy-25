@@ -576,6 +576,7 @@ body {
 
 .main-navigation {
   display: inline-flex;
+  max-width: 879px;
   align-items: center;
 }
 
@@ -604,6 +605,8 @@ body {
 
 .site-navigation {
   display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 725px;
   padding: 0;
   margin: -8px 0 0;
   list-style: none;
@@ -819,6 +822,8 @@ body {
 
 .user-menu {
   display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 267px;
   margin-top: -8px;
 }
 
