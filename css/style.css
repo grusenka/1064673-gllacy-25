@@ -205,12 +205,12 @@ body {
 
 .checkbox-label {
   display: inline-flex;
-  align-items: center;
   font-weight: 500;
 }
 
 .checkbox-label::before {
   content: '';
+  flex-shrink: 0;
   display: inline-block;
   width: 24px;
   height: 20px;
@@ -241,12 +241,12 @@ body {
 .radio-label {
   position: relative;
   display: inline-flex;
-  align-items: center;
   font-weight: 500;
 }
 
 .radio-label::before {
   content: '';
+  flex-shrink: 0;
   display: inline-block;
   box-sizing: border-box;
   width: 22px;
