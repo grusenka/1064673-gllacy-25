@@ -576,7 +576,7 @@ body {
 
 .main-navigation {
   display: inline-flex;
-  max-width: 879px;
+  max-width: 873px;
   align-items: center;
 }
 
@@ -823,7 +823,7 @@ body {
 .user-menu {
   display: inline-flex;
   flex-wrap: wrap;
-  max-width: 267px;
+  max-width: 273px;
   margin-top: -8px;
 }
 
