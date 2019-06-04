@@ -1308,7 +1308,7 @@ body {
 .post-anons {
   box-sizing: border-box;
   width: 560px;
-  padding: 20px;
+  padding: 20px 250px 20px 20px;
   color: #323232;
   border-radius: 14px;
   background-color: #ffffff;
