@@ -1134,7 +1134,6 @@ body {
 .hits-catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 -13px 0;
   padding: 0;
   list-style: none;
@@ -1462,7 +1461,6 @@ body {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0 -13px 81px;
   padding: 0;
   list-style: none;
@@ -1475,10 +1473,6 @@ body {
 
 .catalog-list-item:nth-last-child(-n+4) {
   margin-bottom: 0;
-}
-
-.catalog-list-item:last-child {
-  margin-right: auto;
 }
 
 .catalog .pagination {
