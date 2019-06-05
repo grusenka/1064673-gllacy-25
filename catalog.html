@@ -6,7 +6,28 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="https://unpkg.com/nouislider@13.1.5/distribute/nouislider.min.js"></script>
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "img/gllacy-index.jpg" );
+      }
+      /* Tablet */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "img/760.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "img/gllacy-catalog.jpg" );
+        }
+      }
+    </style>
   </head>
   <body class="theme-green">
     <header class="main-header container">
@@ -52,7 +73,7 @@
 
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">
-              <span class="link">О компании</span>
+              <span class="link">О Компании</span>
             </a>
           </li>
         </ul>
@@ -194,93 +215,87 @@
       <section class="catalog container">
         <h1 class="catalog-title">Сливочное мороженое</h1>
 
-        <div class="catalog-filter">
-          <form class="form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="form-group">
-              <div class="form-field">
-                <label class="label-field" for="filter-sorter">Сортировка:</label>
+        <form class="form catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <div class="form-field">
+            <label class="label-field" for="filter-sorter">Сортировка:</label>
 
-                <select class="select-field" name="sorter" id="filter-sorter">
-                  <option value="popular">по популярности</option>
-                  <option value="cheap">сначала недорогие</option>
-                  <option value="expensive">сначала дорогие</option>
-                  <option value="fat">по жирности</option>
-                </select>
-              </div>
+            <select class="select-field" name="sorter" id="filter-sorter">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
 
-              <div class="form-field">
-                <label class="label-field">Цена: 100 руб. – 500 руб.</label>
+          <div class="form-field">
+            <label class="label-field">Цена: 100 руб. – 500 руб.</label>
 
-                <div class="range-field">
-                  <div class="js-filter-price"></div>
-                </div>
-              </div>
-
-              <div class="form-field">
-                <label class="label-field">Жирность:</label>
-
-                <div class="radio-field-group">
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-1" name="filter-fat" value="0%">
-                    <label class="radio-label" for="filter-fat-1">0%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-2" name="filter-fat" checked="checked" value="10%">
-                    <label class="radio-label" for="filter-fat-2">до 10%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-3" name="filter-fat" value="30%">
-                    <label class="radio-label" for="filter-fat-3">до 30%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-4" name="filter-fat" value="up-30%">
-                    <label class="radio-label" for="filter-fat-4">выше 30%</label>
-                  </p>
-                </div>
-              </div>
+            <div class="range-field">
+              <div class="js-filter-price"></div>
             </div>
+          </div>
 
-            <div class="form-group">
-              <div class="form-field">
-                <label class="label-field">Наполнители:</label>
+          <fieldset class="form-field">
+            <legend class="label-field">Жирность:</legend>
 
-                <div class="checkbox-field-group">
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-stuff-1" name="filter-stuff" value="chocolate" checked="checked">
-                    <label class="checkbox-label" for="filter-stuff-1">шоколадные</label>
-                  </p>
+            <div class="radio-field-group">
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-1" name="filter-fat" value="0%">
+                <label class="radio-label" for="filter-fat-1">0%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-2" name="filter-stuff" value="sugar" checked="checked">
-                    <label class="checkbox-label" for="filter-staff-2">сахарные присыпки</label>
-                  </p>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-2" name="filter-fat" checked="checked" value="10%">
+                <label class="radio-label" for="filter-fat-2">до 10%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-3" value="fruit" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-3">фрукты</label>
-                  </p>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-3" name="filter-fat" value="30%">
+                <label class="radio-label" for="filter-fat-3">до 30%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-4" value="syrup" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-4">сиропы</label>
-                  </p>
-
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-5" value="jams" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-5">джемы</label>
-                  </p>
-                </div>
-              </div>
-
-              <div class="form-field">
-                <button class="secondary-button" type="submit">Применить</button>
-              </div>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-4" name="filter-fat" value="up-30%">
+                <label class="radio-label" for="filter-fat-4">выше 30%</label>
+              </p>
             </div>
-          </form>
-        </div>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend class="label-field">Наполнители:</legend>
+
+            <div class="checkbox-field-group">
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-stuff-1" name="filter-stuff" value="chocolate" checked="checked">
+                <label class="checkbox-label" for="filter-stuff-1">шоколадные</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-2" name="filter-stuff" value="sugar" checked="checked">
+                <label class="checkbox-label" for="filter-staff-2">сахарные присыпки</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-3" value="fruit" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-3">фрукты</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-4" value="syrup" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-4">сиропы</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-5" value="jams" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-5">джемы</label>
+              </p>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <button class="secondary-button" type="submit">Применить</button>
+          </div>
+        </form>
 
         <ul class="catalog-list">
           <li class="catalog-list-item">
@@ -622,13 +637,7 @@
       </div>
     </footer>
 
-    <script>
-      var range = document.querySelector('.js-filter-price');
-      var rangeSlider = noUiSlider.create(range, {
-        start: [250, 500],
-        connect: true,
-        range: {min: 50, max: 1000}
-      });
-    </script>
+    <script src="https://unpkg.com/nouislider@13.1.5/distribute/nouislider.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

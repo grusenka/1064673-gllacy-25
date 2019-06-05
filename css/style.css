@@ -412,29 +412,16 @@ body {
   margin-top: 20px;
 }
 
-.form-group {
-  display: flex;
-  align-items: flex-end;
-}
-
-.form-group .form-field {
-  margin-bottom: 0;
-}
-
-.form-group .form-field:not(:last-child) {
-  margin-right: 15px;
-}
-
-.form-group:not(:last-child) {
-  margin-bottom: 18px;
-}
-
 .label-field {
   display: block;
-  margin: 0 0 6px 15px;
+  margin: 0 0 8px 16px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+}
+
+body {
+  opacity: .7;
 }
 
 .checkbox-field-group,
@@ -1463,8 +1450,26 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   margin-bottom: 40px;
 }
+
+.catalog-filter .form-field {
+  border: 0;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.catalog-filter .form-field:not(:last-child) {
+  margin-right: 16px;
+}
+
+.catalog-filter .form-field:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
 
 .catalog-list {
   display: flex;

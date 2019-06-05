@@ -6,6 +6,28 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "img/gllacy-index.jpg" );
+      }
+      /* Tablet */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "img/760.png" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "img/gllacy-index.jpg" );
+        }
+      }
+    </style>
   </head>
   <body class="theme-green">
     <header class="main-header container">
@@ -51,7 +73,7 @@
 
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">
-              <span class="link">О компании</span>
+              <span class="link">О Компании</span>
             </a>
           </li>
         </ul>
@@ -305,7 +327,7 @@
           <h2 class="visually-hidden">Магазин мороженного собственного производства Gllacy Shop</h2>
 
           <p class="about-text">
-            Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного
+            Магазин Глэйси &mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного
             производства на&nbsp;развес
           </p>
 
