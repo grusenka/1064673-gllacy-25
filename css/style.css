@@ -1453,7 +1453,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter .form-field {
@@ -1465,11 +1465,6 @@ body {
 .catalog-filter .form-field:not(:last-child) {
   margin-right: 16px;
 }
-
-.catalog-filter .form-field:nth-last-child(2) {
-  margin-bottom: 0;
-}
-
 
 .catalog-list {
   display: flex;
