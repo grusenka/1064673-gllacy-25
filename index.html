@@ -85,14 +85,12 @@
 
           <h2 class="visually-hidden">Поиск по сайту</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск</label>
-              <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
+          <form class="form menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
 
-              <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
-            </form>
-          </div>
+            <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
+          </form>
         </section>
 
         <section class="user-menu-authorization user-menu-dropdown">
@@ -100,33 +98,31 @@
 
           <h2 class="visually-hidden">Авторизация</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="form-field">
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-              </p>
+          <form class="form menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-field">
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            </p>
 
-              <p class="form-field">
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
-              </p>
+            <p class="form-field">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            </p>
 
-              <div class="form-group-actions">
-                <button class="button" type="submit">Войти</button>
+            <div class="form-group-actions">
+              <button class="button" type="submit">Войти</button>
 
-                <ul class="links">
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Забыли пароль?</a>
-                  </li>
+              <ul class="links">
+                <li class="link-item">
+                  <a class="link link-theme-light" href="#">Забыли пароль?</a>
+                </li>
 
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Новая регистрация</a>
-                  </li>
-                </ul>
-              </div>
-            </form>
-          </div>
+                <li class="link-item">
+                  <a class="link link-theme-light" href="#">Новая регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </form>
         </section>
 
         <section class="user-menu-basket user-menu-dropdown">
