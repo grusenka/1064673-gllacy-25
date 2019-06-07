@@ -299,8 +299,17 @@ body {
   appearance: none;
 }
 
+.select-field:hover {
+  color: #323232;
+  background-image: url('../img/select-arrow-hover.svg');
+}
+
 .select-field::-ms-expand {
   display: none;
+}
+
+.select-field option {
+  color: #323232;
 }
 
 .noUi-target {
