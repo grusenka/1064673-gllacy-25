@@ -1106,6 +1106,8 @@ body {
 }
 
 .discount-list-item {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   width: 560px;
   padding: 16px 21px 25px 18px;
@@ -1123,9 +1125,8 @@ body {
   font-size: 18px;
 }
 
-.discount-list-actions {
-  margin: 0;
-  text-align: right;
+.discount-list-item .button {
+  margin-left: auto;
 }
 
 .discount-list-item-raspberries {
