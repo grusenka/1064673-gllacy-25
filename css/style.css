@@ -1466,12 +1466,9 @@ body {
   line-height: 22px;
 }
 
-.location-contacts-actions {
-  margin: 24px 0 0;
-}
-
-.location-contacts-actions .button {
-  width: 100%;
+.location-contacts .button {
+  margin-top: 24px;
+  width: calc(100% - 50px);
 }
 
 .catalog {
