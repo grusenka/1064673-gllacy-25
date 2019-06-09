@@ -993,6 +993,7 @@ body {
 
 .user-menu-basket .button {
   margin-left: 100%;
+  white-space: nowrap;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
