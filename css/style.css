@@ -1029,10 +1029,7 @@ body {
 .promo-slide  {
   width: 0;
   height: 0;
-  opacity: 0;
-  visibility: hidden;
   overflow: hidden;
-  transition: 2s visibility, opacity 3s;
 }
 
 .promo-slide.opened {
@@ -1040,9 +1037,6 @@ body {
   height: auto;
   padding-top: 275px;
   padding-bottom: 5px;
-  opacity: 1;
-  visibility: visible;
-  transition: 2s opacity;
 }
 
 .promo-slide-title {
@@ -1051,6 +1045,8 @@ body {
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .promo-slide-image {
@@ -1061,6 +1057,16 @@ body {
   justify-content: center;
   width: 1146px;
   margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s visibility, opacity 3s;
+}
+
+.promo-slide.opened .promo-slide-image,
+.promo-slide.opened .promo-slide-title {
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity;
 }
 
 .promo-controls {
