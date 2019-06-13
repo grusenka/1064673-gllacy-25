@@ -4,7 +4,9 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 22px;
+  background-color: #849d8f;
   transition: background-color 3s;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .theme-green {
@@ -70,6 +72,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-align: center;
+  vertical-align: bottom;
   border: 0;
   border-radius: 46px;
   background-image: linear-gradient(#f26843, #e74a35);
@@ -129,6 +132,7 @@ body {
   text-decoration: none;
   white-space: nowrap;
   color: #ffffff;
+  vertical-align: bottom;
   border: none;
   border-radius: 36px;
   background-color: rgba(251, 252, 251, .2);
@@ -221,6 +225,7 @@ body {
   width: 24px;
   height: 20px;
   margin-right: 8px;
+  vertical-align: bottom;
   opacity: .8;
   background: url('../img/checkbox-field.svg') no-repeat;
   background-size: 20px 20px;
@@ -258,6 +263,7 @@ body {
   width: 22px;
   height: 22px;
   margin-right: 10px;
+  vertical-align: bottom;
   border: 3px solid rgba(255, 255, 255, .8);
   border-radius: 50%;
 }
@@ -429,6 +435,14 @@ body {
 .form-subscription .button {
   padding-left: 19px;
   padding-right: 19px;
+}
+
+@media all and (-ms-high-contrast:none) {
+  .form-subscription .button {
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .form-feedback .text-field {
@@ -626,6 +640,7 @@ body {
   padding: 0 14px;
   line-height: 32px;
   font-weight: 700;
+  vertical-align: bottom;
   border-radius: 14px;
   text-decoration: none;
 }
@@ -767,6 +782,7 @@ body {
 .action-button::before {
   content: '';
   display: inline-block;
+  vertical-align: bottom;
   background-repeat: no-repeat;
 }
 
@@ -1036,7 +1052,7 @@ body {
 }
 
 .promo-slide-title {
-  max-width: 670px;
+  max-width: 705px;
   margin: 0 auto 30px;
   font-size: 60px;
   line-height: 60.35px;
@@ -1129,7 +1145,7 @@ body {
 }
 
 .discount-list-item .button {
-  margin-left: auto;
+  align-self: flex-end;
 }
 
 .discount-list-item-raspberries {
@@ -1226,6 +1242,13 @@ body {
 
 .product .button {
   order: 2;
+}
+
+@media all and (-ms-high-contrast:none) {
+  .product .button {
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
 }
 
 .product:hover::before {
@@ -1430,6 +1453,11 @@ body {
   height: auto;
 }
 
+.location-map iframe {
+  width: 100%;
+  display: block;
+}
+
 .location-contacts {
   box-sizing: border-box;
   width: 302px;
@@ -1472,6 +1500,7 @@ body {
 .location-contacts .button {
   margin-top: 24px;
   width: calc(100% - 50px);
+  white-space: nowrap;
 }
 
 .catalog {
@@ -1724,7 +1753,7 @@ body {
 
 .dialog {
   position: relative;
-  margin: auto;
+  margin: 338px auto auto;
   box-sizing: border-box;
   width: 478px;
   padding: 15px 25px 25px;
