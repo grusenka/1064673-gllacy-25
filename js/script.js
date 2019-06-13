@@ -9,7 +9,8 @@ var promoSlide3 = document.querySelector('.promo-slide:nth-child(3)');
 
 var dialogOverlay = document.querySelector('.dialog-overlay');
 var feedbackButton = document.querySelector('.js-feedback-dialog-button');
-var name = dialogOverlay.querySelector("[name=name]");
+
+var range = document.querySelector(".js-filter-price");
 
 if (dialogOverlay) {
   var dialogCloseButton = dialogOverlay.querySelector('.js-dialog-close-button');
@@ -17,7 +18,6 @@ if (dialogOverlay) {
   var login = dialogOverlay.querySelector("[name=name]");
   var email = dialogOverlay.querySelector("[name=email]");
   var message = dialogOverlay.querySelector("[name=message]");
-
 }
 
 if (promoControlGreen) {
