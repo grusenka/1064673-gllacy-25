@@ -447,10 +447,6 @@ body {
   font-weight: 500;
 }
 
-body {
-  opacity: .7;
-}
-
 .checkbox-field-group,
 .radio-field-group {
   display: flex;
@@ -1675,6 +1671,46 @@ body {
   margin: 7px 0 0;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .dialog-overlay {
   position: fixed;
   left: 0;
@@ -1717,4 +1753,12 @@ body {
 
 .dialog-overlay.opened {
   display: flex;
+}
+
+.dialog-overlay.opened .dialog {
+  animation: bounce 0.6s
+}
+
+.dialog-overlay.error .dialog {
+  animation: shake 0.6s
 }
