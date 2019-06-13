@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="theme-green">
     <header class="main-header container">
@@ -51,7 +51,7 @@
 
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">
-              <span class="link">О компании</span>
+              <span class="link">О Компании</span>
             </a>
           </li>
         </ul>
@@ -63,14 +63,12 @@
 
           <h2 class="visually-hidden">Поиск по сайту</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск</label>
-              <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
+          <form class="form menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
 
-              <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
-            </form>
-          </div>
+            <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
+          </form>
         </section>
 
         <section class="user-menu-authorization user-menu-dropdown">
@@ -78,33 +76,29 @@
 
           <h2 class="visually-hidden">Авторизация</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="form-field">
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-              </p>
+          <form class="form form-vertical menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-field">
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            </p>
 
-              <p class="form-field">
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
-              </p>
+            <p class="form-field">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            </p>
 
-              <div class="form-group-actions">
-                <button class="button" type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
 
-                <ul class="links">
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Забыли пароль?</a>
-                  </li>
+            <ul class="links">
+              <li class="link-item">
+                <a class="link link-theme-light" href="#">Забыли пароль?</a>
+              </li>
 
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Новая регистрация</a>
-                  </li>
-                </ul>
-              </div>
-            </form>
-          </div>
+              <li class="link-item">
+                <a class="link link-theme-light" href="#">Новая регистрация</a>
+              </li>
+            </ul>
+          </form>
         </section>
 
         <section class="user-menu-basket user-menu-dropdown">
@@ -127,9 +121,7 @@
       <section class="promo container">
         <ul class="promo-slides">
           <li class="promo-slide opened">
-            <h2 class="promo-slide-title">
-              Крем-брюле и пломбир<br>
-              с малиновым джемом</h2>
+            <h2 class="promo-slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
 
             <p class="promo-slide-image">
               <img src="img/promo-slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
@@ -139,9 +131,7 @@
           </li>
 
           <li class="promo-slide">
-            <h2 class="promo-slide-title">
-              Шоколадный пломбир<br>
-              и лимонный сорбет</h2>
+            <h2 class="promo-slide-title">Шоколадный пломбир и лимонный сорбет</h2>
 
             <p class="promo-slide-image">
               <img src="img/promo-slide-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
@@ -151,9 +141,7 @@
           </li>
 
           <li class="promo-slide">
-            <h2 class="promo-slide-title">
-              Пломбир с помадкой<br>
-              и клубничный щербет</h2>
+            <h2 class="promo-slide-title">Пломбир с помадкой и&nbsp;клубничный щербет</h2>
 
             <p class="promo-slide-image">
               <img src="img/promo-slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
@@ -184,21 +172,20 @@
         </ul>
       </section>
 
+
       <section class="discount container">
         <h2 class="visually-hidden">Акции</h2>
 
         <ul class="discount-list">
           <li class="discount-list-item discount-list-item-raspberries">
-            <h3 class="discount-list-title">Малинка даром</h3>
+            <h3 class="discount-list-title">Малинка даром!</h3>
 
             <p class="discount-list-text">
               При покупке 2&nbsp;кг любого фруктового мороженого, добавим в&nbsp;ваш заказ банку малинового варенья
               бесплатно.
             </p>
 
-            <p class="discount-list-actions">
-              <a class="button" href="#">Хочу варенье!</a>
-            </p>
+            <a class="button" href="#">Хочу варенье!</a>
           </li>
 
           <li class="discount-list-item discount-list-item-chocolate">
@@ -209,9 +196,7 @@
               совершенно бесплатно.
             </p>
 
-            <p class="discount-list-actions">
-              <a class="button" href="#">Хочу шоколадки!</a>
-            </p>
+            <a class="button" href="#">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -231,14 +216,11 @@
               </p>
 
               <p class="product-price">
-                310
-                <span class="product-price-currency">₽</span>
+                310&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a href="#" class="button">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -253,21 +235,18 @@
               </p>
 
               <p class="product-price">
-                380
-                <span class="product-price-currency">₽</span>
+                380&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="hits-catalog-list-item">
             <article class="product product-hit">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a>
+                <a class="link" href="#">Сливочно-клубничное&nbsp;с присыпкой из&nbsp;белого шоколада</a>
               </h3>
 
               <p class="product-photo">
@@ -275,21 +254,18 @@
               </p>
 
               <p class="product-price">
-                355
-                <span class="product-price-currency">₽</span>
+                355&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="hits-catalog-list-item">
             <article class="product product-hit">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочное крем-брюле с&nbsp;карамельной подливкой</a>
+                <a class="link" href="#">Сливочное крем-брюле&nbsp;с карамельной подливкой</a>
               </h3>
 
               <p class="product-photo">
@@ -297,14 +273,11 @@
               </p>
 
               <p class="product-price">
-                415
-                <span class="product-price-currency">₽</span>
+                415&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
         </ul>
@@ -315,7 +288,7 @@
           <h2 class="visually-hidden">Магазин мороженного собственного производства Gllacy Shop</h2>
 
           <p class="about-text">
-            Магазин Глэйси&nbsp;&mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного
+            Магазин Глэйси &mdash; это онлайн- и&nbsp;офлайн-магазин по&nbsp;продаже мороженого собственного
             производства на&nbsp;развес
           </p>
 
@@ -348,10 +321,7 @@
           <p class="post-anons-subtitle">Новое в нашем блоге</p>
 
           <h3 class="post-anons-title">
-            <a href="#">
-              10&nbsp;способов сервировки<br>
-              фруктовых щербетов к<br>
-              столу</a>
+            <a href="#">10&nbsp;способов сервировки фруктовых щербетов к столу</a>
           </h3>
         </article>
 
@@ -363,13 +333,11 @@
             у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)
           </p>
 
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="form-field form-field-horizontal">
-              <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-              <input class="text-field" type="email" name="email" id="subscription-email" placeholder="Электронная почта" required>
+          <form class="form form-subscription" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+            <input class="text-field" type="email" name="email" id="subscription-email" placeholder="Электронная почта" required>
 
-              <button class="button" type="submit">Отправить</button>
-            </p>
+            <button class="button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -380,8 +348,7 @@
 
           <div class="location-contacts">
             <p class="location-contacts-text">
-              Адрес главного офиса<br>
-              и офлайн-магазина:
+              Адрес главного офиса и&nbsp;офлайн&#8209;магазина:
 
               <strong class="location-contacts-text-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
             </p>
@@ -392,9 +359,7 @@
               <span class="location-contacts-text-info">(с 10 до 20 ежедневно)</span>
             </p>
 
-            <p class="location-contacts-actions">
-              <button class="button js-feedback-dialog-button" type="button">Форма обратной связи</button>
-            </p>
+            <a class="button js-feedback-dialog-button" href="#">Форма обратной связи</a>
           </div>
         </div>
 
@@ -462,31 +427,29 @@
       <section class="dialog">
         <h2 class="dialog-title">Мы обязательно вам ответим!</h2>
 
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form form-vertical form-feedback" action="https://echo.htmlacademy.ru" method="post">
           <p class="form-field">
             <label class="visually-hidden" for="name">Имя</label>
-            <input class="text-field" type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+            <input class="text-field" type="text" name="name" id="name" placeholder="Как вас зовут?">
           </p>
 
           <p class="form-field">
             <label class="visually-hidden" for="email">Электронная почта</label>
-            <input class="text-field" type="email" name="email" id="email" placeholder="Ваша почта для ответа?" required>
+            <input class="text-field" type="email" name="email" id="email" placeholder="Ваша почта для ответа?">
           </p>
 
           <p class="form-field">
             <label class="visually-hidden" for="message">Сообщение</label>
-            <textarea class="textarea-field" name="message" id="message" placeholder="Напишите что-нибудь..." required></textarea>
+            <textarea class="textarea-field" name="message" id="message" placeholder="Напишите что-нибудь..."></textarea>
           </p>
 
-          <div class="form-actions">
-            <button class="button" type="submit">Отправить</button>
-          </div>
+          <button class="button" type="submit">Отправить</button>
         </form>
 
         <button class="dialog-close js-dialog-close-button" type="button">Закрыть</button>
       </section>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

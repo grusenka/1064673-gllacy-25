@@ -5,8 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://unpkg.com/nouislider@13.1.5/distribute/nouislider.min.js"></script>
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="theme-green">
     <header class="main-header container">
@@ -27,7 +26,7 @@
               </li>
 
               <li>
-                <a class="site-navigation-submenu-link" href="#">Сливочное</a>
+                <a class="site-navigation-submenu-link" href="catalog.html">Сливочное</a>
               </li>
 
               <li>
@@ -52,7 +51,7 @@
 
           <li class="site-navigation-item">
             <a class="site-navigation-link" href="#">
-              <span class="link">О компании</span>
+              <span class="link">О Компании</span>
             </a>
           </li>
         </ul>
@@ -64,14 +63,12 @@
 
           <h2 class="visually-hidden">Поиск по сайту</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search">Поиск</label>
-              <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
+          <form class="form menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="text-field" type="search" name="search" id="search" placeholder="Что ищем?" required>
 
-              <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
-            </form>
-          </div>
+            <button class="visually-hidden" type="submit" tabindex="-1">Найти</button>
+          </form>
         </section>
 
         <section class="user-menu-authorization user-menu-dropdown">
@@ -79,33 +76,31 @@
 
           <h2 class="visually-hidden">Авторизация</h2>
 
-          <div class="menu-dropdown visually-hidden">
-            <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="form-field">
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-              </p>
+          <form class="form form-vertical menu-dropdown visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+            <p class="form-field">
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="text-field" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            </p>
 
-              <p class="form-field">
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
-              </p>
+            <p class="form-field">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="text-field" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            </p>
 
-              <div class="form-group-actions">
-                <button class="button" type="submit">Войти</button>
+            <div class="form-group-actions">
+              <button class="button" type="submit">Войти</button>
 
-                <ul class="links">
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Забыли пароль</a>
-                  </li>
+              <ul class="links">
+                <li class="link-item">
+                  <a class="link link-theme-light" href="#">Забыли пароль</a>
+                </li>
 
-                  <li class="link-item">
-                    <a class="link link-theme-light" href="#">Новая регистрация</a>
-                  </li>
-                </ul>
-              </div>
-            </form>
-          </div>
+                <li class="link-item">
+                  <a class="link link-theme-light" href="#">Новая регистрация</a>
+                </li>
+              </ul>
+            </div>
+          </form>
         </section>
 
         <section class="user-menu-basket user-menu-dropdown">
@@ -194,93 +189,87 @@
       <section class="catalog container">
         <h1 class="catalog-title">Сливочное мороженое</h1>
 
-        <div class="catalog-filter">
-          <form class="form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="form-group">
-              <div class="form-field">
-                <label class="label-field" for="filter-sorter">Сортировка:</label>
+        <form class="form catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <div class="form-field">
+            <label class="label-field" for="filter-sorter">Сортировка:</label>
 
-                <select class="select-field" name="sorter" id="filter-sorter">
-                  <option value="popular">по популярности</option>
-                  <option value="cheap">сначала недорогие</option>
-                  <option value="expensive">сначала дорогие</option>
-                  <option value="fat">по жирности</option>
-                </select>
-              </div>
+            <select class="select-field" name="sorter" id="filter-sorter">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
 
-              <div class="form-field">
-                <label class="label-field">Цена: 100 руб. – 500 руб.</label>
+          <div class="form-field">
+            <label class="label-field">Цена: 100 руб. – 500 руб.</label>
 
-                <div class="range-field">
-                  <div class="js-filter-price"></div>
-                </div>
-              </div>
-
-              <div class="form-field">
-                <label class="label-field">Жирность:</label>
-
-                <div class="radio-field-group">
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-1" name="filter-fat" value="0%">
-                    <label class="radio-label" for="filter-fat-1">0%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-2" name="filter-fat" checked="checked" value="10%">
-                    <label class="radio-label" for="filter-fat-2">до 10%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-3" name="filter-fat" value="30%">
-                    <label class="radio-label" for="filter-fat-3">до 30%</label>
-                  </p>
-
-                  <p class="radio-field">
-                    <input class="radio-input visually-hidden" type="radio" id="filter-fat-4" name="filter-fat" value="up-30%">
-                    <label class="radio-label" for="filter-fat-4">выше 30%</label>
-                  </p>
-                </div>
-              </div>
+            <div class="range-field">
+              <div class="js-filter-price"></div>
             </div>
+          </div>
 
-            <div class="form-group">
-              <div class="form-field">
-                <label class="label-field">Наполнители:</label>
+          <fieldset class="form-field">
+            <legend class="label-field">Жирность:</legend>
 
-                <div class="checkbox-field-group">
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-stuff-1" name="filter-stuff" value="chocolate" checked="checked">
-                    <label class="checkbox-label" for="filter-stuff-1">шоколадные</label>
-                  </p>
+            <div class="radio-field-group">
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-1" name="filter-fat" value="0%">
+                <label class="radio-label" for="filter-fat-1">0%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-2" name="filter-stuff" value="sugar" checked="checked">
-                    <label class="checkbox-label" for="filter-staff-2">сахарные присыпки</label>
-                  </p>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-2" name="filter-fat" checked="checked" value="10%">
+                <label class="radio-label" for="filter-fat-2">до 10%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-3" value="fruit" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-3">фрукты</label>
-                  </p>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-3" name="filter-fat" value="30%">
+                <label class="radio-label" for="filter-fat-3">до 30%</label>
+              </p>
 
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-4" value="syrup" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-4">сиропы</label>
-                  </p>
-
-                  <p class="checkbox-field">
-                    <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-5" value="jams" name="filter-stuff">
-                    <label class="checkbox-label" for="filter-staff-5">джемы</label>
-                  </p>
-                </div>
-              </div>
-
-              <div class="form-field">
-                <button class="secondary-button" type="submit">Применить</button>
-              </div>
+              <p class="radio-field">
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-4" name="filter-fat" value="up-30%">
+                <label class="radio-label" for="filter-fat-4">выше 30%</label>
+              </p>
             </div>
-          </form>
-        </div>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <legend class="label-field">Наполнители:</legend>
+
+            <div class="checkbox-field-group">
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-stuff-1" name="filter-stuff" value="chocolate" checked="checked">
+                <label class="checkbox-label" for="filter-stuff-1">шоколадные</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-2" name="filter-stuff" value="sugar" checked="checked">
+                <label class="checkbox-label" for="filter-staff-2">сахарные присыпки</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-3" value="fruit" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-3">фрукты</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-4" value="syrup" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-4">сиропы</label>
+              </p>
+
+              <p class="checkbox-field">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="filter-staff-5" value="jams" name="filter-stuff">
+                <label class="checkbox-label" for="filter-staff-5">джемы</label>
+              </p>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <button class="secondary-button" type="submit">Применить</button>
+          </div>
+        </form>
 
         <ul class="catalog-list">
           <li class="catalog-list-item">
@@ -294,14 +283,11 @@
               </p>
 
               <p class="product-price">
-                310
-                <span class="product-price-currency">₽</span>
+                310&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a href="#" class="button">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -316,21 +302,18 @@
               </p>
 
               <p class="product-price">
-                380
-                <span class="product-price-currency">₽</span>
+                380&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="catalog-list-item">
             <article class="product">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a>
+                <a class="link" href="#">Сливочно-клубничное&nbsp;с присыпкой из&nbsp;белого шоколада</a>
               </h3>
 
               <p class="product-photo">
@@ -338,21 +321,18 @@
               </p>
 
               <p class="product-price">
-                355
-                <span class="product-price-currency">₽</span>
+                355&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="catalog-list-item">
             <article class="product">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочное крем-брюле с&nbsp;карамельной подливкой</a>
+                <a class="link" href="#">Сливочное крем-брюле&nbsp;с карамельной подливкой</a>
               </h3>
 
               <p class="product-photo">
@@ -360,14 +340,11 @@
               </p>
 
               <p class="product-price">
-                415
-                <span class="product-price-currency">₽</span>
+                415&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -382,14 +359,11 @@
               </p>
 
               <p class="product-price">
-                325
-                <span class="product-price-currency">₽</span>
+                325&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -404,21 +378,18 @@
               </p>
 
               <p class="product-price">
-                410
-                <span class="product-price-currency">₽</span>
+                410&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="catalog-list-item">
             <article class="product">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочно-лимонное с&nbsp;карамельной присыпкой</a>
+                <a class="link" href="#">Сливочно-лимонное&nbsp;с карамельной присыпкой</a>
               </h3>
 
               <p class="product-photo">
@@ -426,14 +397,11 @@
               </p>
 
               <p class="product-price">
-                375
-                <span class="product-price-currency">₽</span>
+                375&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -448,21 +416,18 @@
               </p>
 
               <p class="product-price">
-                320
-                <span class="product-price-currency">₽</span>
+                320&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
           <li class="catalog-list-item">
             <article class="product">
               <h3 class="product-title">
-                <a class="link" href="#">Сливочно-ванильное с&nbsp;кусочками шоколада</a>
+                <a class="link" href="#">Сливочно-ванильное&nbspс ;кусочками шоколада</a>
               </h3>
 
               <p class="product-photo">
@@ -470,14 +435,11 @@
               </p>
 
               <p class="product-price">
-                440
-                <span class="product-price-currency">₽</span>
+                440&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -492,14 +454,11 @@
               </p>
 
               <p class="product-price">
-                435
-                <span class="product-price-currency">₽</span>
+                435&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -514,14 +473,11 @@
               </p>
 
               <p class="product-price">
-                355
-                <span class="product-price-currency">₽</span>
+                355&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
 
@@ -536,14 +492,11 @@
               </p>
 
               <p class="product-price">
-                420
-                <span class="product-price-currency">₽</span>
+                420&hairsp;₽
                 <span class="product-price-weight">/кг</span>
               </p>
 
-              <p class="product-actions visually-hidden">
-                <a class="button" href="#">Быстрый просмотр</a>
-              </p>
+              <a class="button visually-hidden" href="#">Быстрый просмотр</a>
             </article>
           </li>
         </ul>
@@ -634,13 +587,7 @@
       </div>
     </footer>
 
-    <script>
-      var range = document.querySelector('.js-filter-price');
-      var rangeSlider = noUiSlider.create(range, {
-        start: [250, 500],
-        connect: true,
-        range: {min: 50, max: 1000}
-      });
-    </script>
+    <script src="https://unpkg.com/nouislider@13.1.5/distribute/nouislider.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
